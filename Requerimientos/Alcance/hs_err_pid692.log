@@ -1,0 +1,182 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d0b68b0, pid=692, tid=2760
+#
+# JRE version: 6.0_18-b07
+# Java VM: Java HotSpot(TM) Client VM (16.0-b13 mixed mode windows-x86 )
+# Problematic frame:
+# C  [awt.dll+0xb68b0]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x216ae400):  JavaThread "AWT-Windows" daemon [_thread_in_native, id=2760, stack(0x21ee0000,0x220e0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x220df878, EBX=0x227a69e8, ECX=0x0000010e, EDX=0x000000c0
+ESP=0x220df860, EBP=0x75cb1450, ESI=0x00000000, EDI=0x000000c0
+EIP=0x6d0b68b0, EFLAGS=0x00010216
+
+Top of Stack: (sp=0x220df860)
+0x220df860:   220df878 00001000 00000000 2171e860
+0x220df870:   00000001 220df868 220df86c 6d0ae27d
+0x220df880:   00000000 00000000 2171e860 6d0ae34a
+0x220df890:   00000000 2171e860 00000001 6d0ae44e
+0x220df8a0:   2171e860 6d0635f2 02438ad0 00000000
+0x220df8b0:   6d0b0380 00000001 6d102f50 6d102938
+0x220df8c0:   02438ad0 6d0b17b2 6d102f48 6d0b1999
+0x220df8d0:   6d09a233 00000000 00000ac8 00000000 
+
+Instructions: (pc=0x6d0b68b0)
+0x6d0b68a0:   05 00 20 00 00 50 c1 e2 05 8d 44 24 14 50 8b fa
+0x6d0b68b0:   8b 16 57 c1 e1 05 51 56 ff 52 2c 85 c0 0f 8c 93 
+
+
+Stack: [0x21ee0000,0x220e0000],  sp=0x220df860,  free space=7fe220df344k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [awt.dll+0xb68b0]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.awt.windows.WToolkit.eventLoop()V+0
+j  sun.awt.windows.WToolkit.run()V+77
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x216ae800 JavaThread "Thread-1" daemon [_thread_in_native, id=3180, stack(0x22120000,0x22320000)]
+  0x216b1800 JavaThread "TimerQueue" daemon [_thread_blocked, id=4292, stack(0x28d70000,0x28f70000)]
+  0x216b0c00 JavaThread "DestroyJavaVM" [_thread_blocked, id=4400, stack(0x024f0000,0x026f0000)]
+  0x216af000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=3136, stack(0x24bf0000,0x24df0000)]
+=>0x216ae400 JavaThread "AWT-Windows" daemon [_thread_in_native, id=2760, stack(0x21ee0000,0x220e0000)]
+  0x2160c000 JavaThread "AWT-Shutdown" [_thread_blocked, id=3812, stack(0x21ce0000,0x21ee0000)]
+  0x2160b800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=3316, stack(0x21ae0000,0x21ce0000)]
+  0x02471c00 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=3620, stack(0x21290000,0x21490000)]
+  0x02470400 JavaThread "CompilerThread0" daemon [_thread_blocked, id=4980, stack(0x21200000,0x21250000)]
+  0x0246e800 JavaThread "Attach Listener" daemon [_thread_blocked, id=2980, stack(0x20fc0000,0x211c0000)]
+  0x0246b800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4952, stack(0x20d80000,0x20f80000)]
+  0x0243f400 JavaThread "Finalizer" daemon [_thread_blocked, id=4436, stack(0x20b40000,0x20d40000)]
+  0x0243a400 JavaThread "Reference Handler" daemon [_thread_blocked, id=3892, stack(0x20900000,0x20b00000)]
+
+Other Threads:
+  0x02437800 VMThread [stack: 0x20870000,0x208c0000] [id=4576]
+  0x0248d400 WatcherThread [stack: 0x214d0000,0x21520000] [id=4708]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 10240K, used 4935K [0x046f0000, 0x05200000, 0x0c6f0000)
+  eden space 9152K,  47% used [0x046f0000, 0x04b269c0, 0x04fe0000)
+  from space 1088K,  57% used [0x04fe0000, 0x0507b618, 0x050f0000)
+  to   space 1088K,   0% used [0x050f0000, 0x050f0000, 0x05200000)
+ tenured generation   total 22556K, used 21685K [0x0c6f0000, 0x0dcf7000, 0x1c6f0000)
+   the space 22556K,  96% used [0x0c6f0000, 0x0dc1d7f8, 0x0dc1d800, 0x0dcf7000)
+ compacting perm gen  total 20736K, used 20526K [0x1c6f0000, 0x1db30000, 0x206f0000)
+   the space 20736K,  98% used [0x1c6f0000, 0x1dafba10, 0x1dafbc00, 0x1db30000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files (x86)\astah-professional\jre\bin\javaw.exe
+0x77630000 - 0x777b0000 	C:\Windows\SysWOW64\ntdll.dll
+0x75ca0000 - 0x75da0000 	C:\Windows\syswow64\kernel32.dll
+0x75620000 - 0x75666000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75420000 - 0x754c0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76be0000 - 0x76c8c000 	C:\Windows\syswow64\msvcrt.dll
+0x758a0000 - 0x758b9000 	C:\Windows\SysWOW64\sechost.dll
+0x758c0000 - 0x759b0000 	C:\Windows\syswow64\RPCRT4.dll
+0x751a0000 - 0x75200000 	C:\Windows\syswow64\SspiCli.dll
+0x75190000 - 0x7519c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76cc0000 - 0x76dc0000 	C:\Windows\syswow64\USER32.dll
+0x75670000 - 0x75700000 	C:\Windows\syswow64\GDI32.dll
+0x75c90000 - 0x75c9a000 	C:\Windows\syswow64\LPK.dll
+0x75b90000 - 0x75c2d000 	C:\Windows\syswow64\USP10.dll
+0x75c30000 - 0x75c90000 	C:\Windows\system32\IMM32.DLL
+0x75a90000 - 0x75b5c000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\astah-professional\jre\bin\msvcr71.dll
+0x6d800000 - 0x6da97000 	C:\Program Files (x86)\astah-professional\jre\bin\client\jvm.dll
+0x73a60000 - 0x73a92000 	C:\Windows\system32\WINMM.dll
+0x72e50000 - 0x72e9b000 	C:\Windows\system32\apphelp.dll
+0x6d7b0000 - 0x6d7bc000 	C:\Program Files (x86)\astah-professional\jre\bin\verify.dll
+0x6d330000 - 0x6d34f000 	C:\Program Files (x86)\astah-professional\jre\bin\java.dll
+0x6d290000 - 0x6d298000 	C:\Program Files (x86)\astah-professional\jre\bin\hpi.dll
+0x75210000 - 0x75215000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d7f0000 - 0x6d7ff000 	C:\Program Files (x86)\astah-professional\jre\bin\zip.dll
+0x6d000000 - 0x6d14a000 	C:\Program Files (x86)\astah-professional\jre\bin\awt.dll
+0x73100000 - 0x73151000 	C:\Windows\system32\WINSPOOL.DRV
+0x75e30000 - 0x75f8c000 	C:\Windows\syswow64\ole32.dll
+0x73aa0000 - 0x73c3e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_421189da2b7fabfc\COMCTL32.dll
+0x76dc0000 - 0x76e17000 	C:\Windows\syswow64\SHLWAPI.dll
+0x72910000 - 0x72923000 	C:\Windows\system32\DWMAPI.DLL
+0x72960000 - 0x729e0000 	C:\Windows\system32\uxtheme.dll
+0x75f90000 - 0x76bd9000 	C:\Windows\syswow64\shell32.dll
+0x6d230000 - 0x6d284000 	C:\Program Files (x86)\astah-professional\jre\bin\fontmanager.dll
+0x6acf0000 - 0x6aeb3000 	C:\Windows\system32\d3d9.dll
+0x730a0000 - 0x730a9000 	C:\Windows\system32\VERSION.dll
+0x6ace0000 - 0x6ace6000 	C:\Windows\system32\d3d8thk.dll
+0x6aec0000 - 0x6afa6000 	C:\Windows\system32\aticfx32.dll
+0x69b70000 - 0x69b7b000 	C:\Windows\system32\atiu9pag.dll
+0x66c50000 - 0x6724e000 	C:\Windows\system32\atiumdag.dll
+0x673b0000 - 0x67842000 	C:\Windows\system32\atiumdva.dll
+0x6d610000 - 0x6d623000 	C:\Program Files (x86)\astah-professional\jre\bin\net.dll
+0x754c0000 - 0x754f5000 	C:\Windows\syswow64\WS2_32.dll
+0x77600000 - 0x77606000 	C:\Windows\syswow64\NSI.dll
+0x73170000 - 0x731ac000 	C:\Windows\system32\mswsock.dll
+0x72fc0000 - 0x72fc6000 	C:\Windows\System32\wship6.dll
+0x6d630000 - 0x6d639000 	C:\Program Files (x86)\astah-professional\jre\bin\nio.dll
+0x72fb0000 - 0x72fc0000 	C:\Windows\system32\NLAapi.dll
+0x72f60000 - 0x72fa4000 	C:\Windows\system32\DNSAPI.dll
+0x72f50000 - 0x72f58000 	C:\Windows\System32\winrnr.dll
+0x72f40000 - 0x72f50000 	C:\Windows\system32\napinsp.dll
+0x73160000 - 0x73165000 	C:\Windows\System32\wshtcpip.dll
+0x72f20000 - 0x72f32000 	C:\Windows\system32\pnrpnsp.dll
+0x73630000 - 0x7364c000 	C:\Windows\system32\IPHLPAPI.DLL
+0x73620000 - 0x73627000 	C:\Windows\system32\WINNSI.DLL
+0x72f10000 - 0x72f16000 	C:\Windows\system32\rasadhlp.dll
+0x72ed0000 - 0x72f08000 	C:\Windows\System32\fwpuclnt.dll
+0x771a0000 - 0x77223000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x75a00000 - 0x75a8f000 	C:\Windows\syswow64\OLEAUT32.dll
+0x21a30000 - 0x21a3d000 	C:\Program Files (x86)\Stardock\CursorFX\CurXP0.dll
+0x6d1a0000 - 0x6d1c3000 	C:\Program Files (x86)\astah-professional\jre\bin\dcpr.dll
+0x73050000 - 0x73066000 	C:\Windows\system32\CRYPTSP.dll
+0x73010000 - 0x7304b000 	C:\Windows\system32\rsaenh.dll
+0x73c50000 - 0x73c67000 	C:\Windows\system32\USERENV.dll
+0x73c40000 - 0x73c4b000 	C:\Windows\system32\profapi.dll
+
+VM Arguments:
+jvm_args: -Xms16m -Xmx384m -Xss2m 
+java_command: C:\Program Files (x86)\astah-professional\\astah-pro.jar C:\Users\Administrador\Documents\facu\4\ingenieria de software\final-ing-soft\Requerimientos\Alcance\Modelo_de_Negocio.asta
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip
+PATH=C:\Program Files (x86)\astah-professional\\jre\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QT Lite\QTSystem;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Common Files\ACD Systems\EN;C:\Program Files (x86)\Common Files\ACD Systems;C:\Program Files\TortoiseSVN\bin;C:\wamp\bin\mysql\mysql5.5.24\bin;c:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\QT Lite\QTSystem\;C:\wamp\bin\php\php5.4.3\;
+USERNAME=Administrador
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 16 Model 6 Stepping 3, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 16 model 6 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, popcnt, mmxext, 3dnow, 3dnowext, lzcnt
+
+Memory: 4k page, physical 3926936k(2341208k free), swap 7851976k(5813568k free)
+
+vm_info: Java HotSpot(TM) Client VM (16.0-b13) for windows-x86 JRE (1.6.0_18-b07), built on Dec 17 2009 13:35:55 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Sat Dec 07 13:17:56 2013
+elapsed time: 13407 seconds
+
