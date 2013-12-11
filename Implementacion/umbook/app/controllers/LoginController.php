@@ -3,22 +3,22 @@
 class LoginController extends Controller{
 
 
-	private $objUsuario;
+	private $objUser;
 
 	public function __construct(){
 		parent::__construct();
-		$this->objUsuario = $this->loadModel('usuario');
+		$this->objUser = $this->loadModel('User');
 	}
 	
 	public function index(){}
 
-	public function validarUsuario(){
+	public function validarUser(){
 		$errores = array();
 		if($_POST){
-			$this->objUsuario->setLogin($_POST['user'], $_POST['pass']);
-			if(!$this->esCadena($this->objUsuario->user))
-				$errores['user'] = 'Porfavor introduzca un usuario valido';
-			if(!$this->esCadena($this->objUsuario->pass))
+			$this->objUser->setLogin($_POST['user'], $_POST['pass']);
+			if(!$this->esCadena($this->objUser->user))
+				$errores['user'] = 'Porfavor introduzca un User valido';
+			if(!$this->esCadena($this->objUser->pass))
 				$errores['pass'] = 'Porfavor introduzca una password valida';
 			if(count($errores))
 				$this->error($errores);  //Carga la interfaz formulario error
@@ -32,30 +32,30 @@ class LoginController extends Controller{
 	} //REQUEST
 
 	public function iniciarSesion(){
-		require_once(HELPERS_PATH."daos". DS ."UsuarioDAO.php");
-		$objUsuarioDao = new UsuarioDAO();
-		if(! $this->id = $objUsuarioDao->checkLogin($this))
+		require_once(DAOS_PATH ."UserDAO.php");
+		$objUserDao = new UserDAO();
+		if(! $this->id = $objUserDao->checkLogin($this))
 			return false;
 		Session::set('autenticado', true);
-		Session::set('usuario', $this->user);
+		Session::set('User', $this->user);
 		Session::set('id', (int)$this->id);
 		return true;
 	}
 
 	public function cerrarSesion(){
 		Session::destroy();
-		$this->redireccionar('');
+		$this->redirect('');
 	}
 
 	public function mostrarInicio(){
-		$this->redireccionar('inicio');
+		$this->redirect('inicio');
 	}
 
 	public function error($errores = array()){
-		$this->objView->strTitulo = "Error en el login";
+		$this->objView->strTitle = "Error en el login";
 		$this->objView->arrayErrores = $errores;
-		$this->objView->objUsuario = $this->objUsuario;
-		$this->objView->armaPathParaCargarView('errorLogin');
+		$this->objView->objUser = $this->objUser;
+		$this->objView->renderView('errorLogin');
 	}
 
 }

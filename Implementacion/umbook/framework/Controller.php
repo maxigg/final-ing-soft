@@ -6,13 +6,13 @@ abstract class Controller
 {
     protected $objView;
     
-    public function __construct($strControlador=false) {
+    public function __construct($strController=false) {
          error_log( __FILE__  ." >  > ".__METHOD__);
 
         
-        if($strControlador){
+        if($strController){
 
-            $objRequest = new Request($strControlador);
+            $objRequest = new Request($strController);
 
             $this->objView = new View($objRequest);
         }
@@ -25,25 +25,25 @@ abstract class Controller
     
     /**
     *
-    * Recibe el nombre del modelo de datos, lo busca. 
+    * Recibe el Name del Model de datos, lo busca. 
     * Si existe lo instancia y lo devueve a quien lo solicito
-    * @param Recive el nombre del modelo.
-    * @return Devuelve el modelo.
+    * @param Recive el Name del Model.
+    * @return Devuelve el Model.
     * @throws Exception.
     *
     **/
         
-    protected function objCargarModelo($strNombreModelo){
+    protected function objLoadModel($strNameModel){
         error_log( __FILE__  ." >  > ".__METHOD__);
-        $strNombreModelo = $strNombreModelo . 'Model';
-        $strRutaModelo = APP_PATH . 'models' . DS . $strNombreModelo . '.php';
+        $strNameModel = $strNameModel . 'Model';
+        $strRutaModel = APP_PATH . 'MODELS' . DS . $strNameModel . '.php';
         
-        if(is_readable($strRutaModelo)){
-            require_once $strRutaModelo;
-            $objModelo = new $strNombreModelo;
-            return $objModelo;
+        if(is_readable($strRutaModel)){
+            require_once $strRutaModel;
+            $objModel = new $strNameModel;
+            return $objModel;
         } else {
-            throw new Exception('Error de modelo');
+            throw new Exception('Error Model');
         }
     }
 
@@ -56,10 +56,10 @@ abstract class Controller
     * @throws Vacio.
     *
     **/
-    protected function redireccionar($strURLRelativa = false){
+    protected function redirect($strRelativeURL = false){
          error_log( __FILE__  ." >  > ".__METHOD__);
-        if($strURLRelativa){
-            header('location:' . BASE_URL . $strURLRelativa);
+        if($strRelativeURL){
+            header('location:' . BASE_URL . $strRelativeURL);
             exit;
         }else{
             header('location:' . BASE_URL);

@@ -2,10 +2,10 @@
 
 
 
-require_once './app/config/config.php';
+require_once './APP/CONFIG/config.php';
 
 
-require_once './framework/includes.php';
+require_once './FRAMEWORK/includes.php';
 
 	
 
@@ -27,6 +27,6 @@ catch(Exception $objException){
 error_log("- - - - FIN APP - - - - ");
 
 
-//FALTA Limpiar session, ver modelo, crear una DAO....
+//FALTA Limpiar session, ver Model, crear una DAO....
 
 ?>

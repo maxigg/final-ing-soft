@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioModel {
+class UserModel {
 	
 	public $intId;
 	public $strUser;

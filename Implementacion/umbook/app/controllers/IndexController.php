@@ -8,25 +8,25 @@ class IndexController extends Controller{
 	}
 	
 	public function index(){
-		$this->objView->strTitulo = "Login Umbook";
-		$this->objView->armaPathParaCargarView('index');
+		$this->objView->strTitle = "Login Umbook";
+		$this->objView->renderView('index');
 	}
 
 
 	public function iniciarSesion(){
 		
-		$objUsuarioDao = new UsuarioDao();
-		if(! $this->id = $objUsuarioDao->checkLogin($this))
+		$objUserDao = new UserDao();
+		if(! $this->id = $objUserDao->checkLogin($this))
 			return false;
 		Session::set('autenticado', true);
-		Session::set('usuario', $this->user);
+		Session::set('User', $this->user);
 		Session::set('id', (int)$this->id);
 		return true;
 	}
 	
 	public function registrar(){	
-		$objUsuarioDao = new UsuarioDao();	
-		if(!$objUsuarioDao->create($this))
+		$objUserDao = new UserDao();	
+		if(!$objUserDao->create($this))
 				return false;
 		return true;
 	}

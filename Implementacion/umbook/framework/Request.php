@@ -4,66 +4,66 @@
 
 class Request
 {
-    private $strControlador;
-    private $strMetodo;
-    private $arrayArgumentos;
+    private $strController;
+    private $strMethod;
+    private $arrayArguments;
 
     /**
     *
-    * Crea un objeto que representa la URL; seteando controlador (primer componente de la URL), método y argumentos  
+    * Crea un objeto que representa la URL; seteando Controller (primer componente de la URL), método y Arguments  
     *
     * @param Nada
     * @return Request
     * @throws Vacio.
     *
     **/
-    public function __construct($strParametroControlador=false) {
+    public function __construct($strParametroController=false) {
 
          error_log( __FILE__  ." >  > ".__METHOD__);
 
 
-        if(!$strParametroControlador){
+        if(!$strParametroController){
             if(isset($_GET['url'])){
                 
                 $strURL = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
                 $arrayURL = explode('/', $strURL);         
                 $arrayURL = array_filter($arrayURL);                   
-                $this->strControlador = strtolower(array_shift($arrayURL));
-                $this->strMetodo = strtolower(array_shift($arrayURL));
-                $this->arrayArgumentos = $arrayURL;
+                $this->strController = strtolower(array_shift($arrayURL));
+                $this->strMethod = strtolower(array_shift($arrayURL));
+                $this->arrayArguments = $arrayURL;
             }       
             
-            if(!$this->strControlador){
-                $this->strControlador = DEFAULT_CONTROLLER;
+            if(!$this->strController){
+                $this->strController = DEFAULT_CONTROLLER;
             }
             
-            if(!$this->strMetodo){
-                $this->strMetodo = DEFAULT_METODO;
+            if(!$this->strMethod){
+                $this->strMethod = DEFAULT_METHOD;
             }
             
         }else{
-            $this->strControlador = $strParametroControlador;
-            $this->strMetodo = "no_es_necesario";        
+            $this->strController = $strParametroController;
+            $this->strMethod = "not necesary";        
         }
 
-        if(!isset($this->arrayArgumentos)){
-            $this->arrayArgumentos = array();
+        if(!isset($this->arrayArguments)){
+            $this->arrayArguments = array();
         }
     }
     
-    public function getStrControlador(){
+    public function getStrController(){
          error_log( __FILE__  ." >  > ".__METHOD__);
-        return $this->strControlador;
+        return $this->strController;
     }
     
-    public function getStrMetodo(){
+    public function getStrMethod(){
          error_log( __FILE__  ." >  > ".__METHOD__);
-        return $this->strMetodo;
+        return $this->strMethod;
     }
     
-    public function getArrayArgumentos(){
+    public function getArrayArguments(){
          error_log( __FILE__  ." >  > ".__METHOD__);
-        return $this->arrayArgumentos;
+        return $this->arrayArguments;
     }
 }
 

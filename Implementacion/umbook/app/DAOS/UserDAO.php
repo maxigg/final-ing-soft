@@ -1,6 +1,6 @@
 <?php
 
-class UsuarioDAO extends DAO {
+class UserDAO extends DAO {
 
 	/**
 	 * createValueObject-method. This method is used when the Dao class needs
@@ -19,17 +19,17 @@ class UsuarioDAO extends DAO {
 
 
 	function createValueObject() {
-		return new UsuarioDAO();
+		return new UserDAO();
 	}
 
 
 	function load($id) {
 
-		$sql = "SELECT id, user, pass FROM usuario WHERE (id = ".$id.") ";
+		$sql = "SELECT id, user, pass FROM User WHERE (id = ".$id.") ";
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 
 		foreach($result as $row) {
-			$temp = new usuarioModel();
+			$temp = new UserModel();
 			$temp->setId($id);
 			$temp->setUser($row[1]);
 			$temp->setPass($row[2]);
@@ -41,7 +41,7 @@ class UsuarioDAO extends DAO {
 	function loadAll() {
 
 
-		$sql = "SELECT * FROM usuario ORDER BY id ASC ";
+		$sql = "SELECT * FROM User ORDER BY id ASC ";
 
 		$searchResults = $this->listQuery($sql);
 
@@ -49,8 +49,8 @@ class UsuarioDAO extends DAO {
 	}
 
 
-	function busqueda($query){
-		$sql = "SELECT id, user, FROM  `usuario`
+	function search($query){
+		$sql = "SELECT id, user, FROM  `User`
 				WHERE
 				`user` LIKE  '%".$query."%'
 						LIMIT 0 , 30";
@@ -58,7 +58,7 @@ class UsuarioDAO extends DAO {
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults = array();
 		foreach($result as $row) {		 
-			$temp = new usuarioModel();		 
+			$temp = new UserModel();		 
 			$temp->setId($row[0]);
 			$temp->setUser($row[1]);			 
 			array_push($searchResults, $temp);
@@ -67,10 +67,10 @@ class UsuarioDAO extends DAO {
 	}
 
 	 
-	function checkLogin($usuario) {
+	function checkLogin($User) {
 
 
-		$sql = "SELECT id FROM usuario where user = '".$usuario->user."' and pass='".$usuario->pass."'";
+		$sql = "SELECT id FROM User where user = '".$User->user."' and pass='".$User->pass."'";
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults=0;
 		foreach ($result as $row){
@@ -98,7 +98,7 @@ class UsuarioDAO extends DAO {
 	 */
 	function create(&$valueObject) {
 
-		$sql = "INSERT INTO usuario (user, pass) VALUES ( ";
+		$sql = "INSERT INTO User (user, pass) VALUES ( ";
 		$sql = $sql."'".$valueObject->getUser()."', ";
 		$sql = $sql."'".$valueObject->getPass()."') ";
 
@@ -121,7 +121,7 @@ class UsuarioDAO extends DAO {
 	 */
 	function save(&$valueObject) {
 
-		$sql = "UPDATE usuario SET user = '".$valueObject->getUser()."', ";
+		$sql = "UPDATE User SET user = '".$valueObject->getUser()."', ";
 		$sql = $sql."pass = '".$valueObject->getPass()."'";
 		$sql = $sql." WHERE (id = ".$valueObject->getId().") ";
 		$result = $this->boolEjecutarModificacionSQL($sql);
@@ -133,9 +133,9 @@ class UsuarioDAO extends DAO {
 		return $result;
 	}
 
-	function savePerfil(&$valueObject) {
+	function saveProfile(&$valueObject) {
 
-		$sql = "UPDATE usuario SET user = '".$valueObject->getUser()."' ";
+		$sql = "UPDATE User SET user = '".$valueObject->getUser()."' ";
 		$sql = $sql." WHERE (id = ".Session::get('id').") ";
 		 
 		$result = $this->boolEjecutarModificacionSQL($sql);
@@ -149,7 +149,7 @@ class UsuarioDAO extends DAO {
 
 	function setPass(&$valueObject) {
 
-		$sql = "UPDATE usuario SET pass = '".$valueObject->getPass()."'  WHERE (id = ".Session::get('id').")";
+		$sql = "UPDATE User SET pass = '".$valueObject->getPass()."'  WHERE (id = ".Session::get('id').")";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		if ($result != 1) {
@@ -176,7 +176,7 @@ class UsuarioDAO extends DAO {
 			return false;
 		}
 
-		$sql = "DELETE FROM usuario WHERE (id = ".$valueObject->getId().") ";
+		$sql = "DELETE FROM User WHERE (id = ".$valueObject->getId().") ";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		if ($result != 1) {
@@ -198,7 +198,7 @@ class UsuarioDAO extends DAO {
 	 */
 	function deleteAll() {
 
-		$sql = "DELETE FROM usuario";
+		$sql = "DELETE FROM User";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		return $result;
@@ -215,7 +215,7 @@ class UsuarioDAO extends DAO {
 	 */
 	function countAll() {
 
-		$sql = "SELECT count(*) FROM usuario";
+		$sql = "SELECT count(*) FROM User";
 		$allRows = 0;
 
 		$result = $this->arrayEjecutarConsultaSQL($sql);
@@ -245,7 +245,7 @@ class UsuarioDAO extends DAO {
 	function searchMatching(&$valueObject) {
 
 		$first = true;
-		$sql = "SELECT * FROM usuario WHERE 1=1 ";
+		$sql = "SELECT * FROM User WHERE 1=1 ";
 
 		if ($valueObject->getId() != 0) {
 			if ($first) {
@@ -284,27 +284,6 @@ class UsuarioDAO extends DAO {
 
 		return $searchResults;
 	}
-
-
-	/**
-	 * databaseUpdate-method. This method is a helper method for internal use. It will execute
-	 * all database handling that will change the information in tables. SELECT queries will
-	 * not be executed here however. The return value indicates how many rows were affected.
-	 * This method will also make sure that if cache is used, it will reset when data changes.
-	 *
-	 * @param conn         This method requires working database connection.
-	 * @param stmt         This parameter contains the SQL statement to be excuted.
-	 */
-	function databaseUpdate($sql) {
-		$result = $this->conn->execute($sql);
-		return $result;
-	}
-
-	function databaseQuery(&$sql) {
-		$result = $this->conn->query($sql);
-		return $result;
-	}
-
 
 
 	/**
