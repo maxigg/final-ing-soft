@@ -9,6 +9,7 @@ class IndexController extends Controller{
 	
 	public function index(){
 		$this->objView->strTitle = "Login Umbook";
+		$this->objView->arrayErrors = array();
 		$this->objView->renderView('index');
 	}
 

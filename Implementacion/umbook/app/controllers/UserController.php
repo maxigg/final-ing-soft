@@ -2,96 +2,116 @@
 
 class UserController extends Controller{
 	
-	public $_UserDao; 
+	private $objUser;
+	public $objUserDao; 
 	
 	
 	public function __construct(){
 		parent::__construct();
 		
-		$this->loadModel('User');
-		require_once DAOS_PATH . 'UserDao.php';
-		
-		$this->_UserDao = new UserDao();
+		$this->objUser = $this->objLoadModel('User');
+		require_once DAOS_PATH ."UserDAO.php";
+		$this->objUserDao = new UserDAO();
 	
-		if(!$User = Session::get('User')){
+		if(!$User = Session::getSessionVariable('User')){
 			$this->redirect('');
 		}
 	}
 	
 	public function index(){
 		
-		$this->mostrarDatos();
+		$this->showUserData();
 	}
 	
 	
-	private function mostrarDatos(){
-		$this->_User = new UserModel();
-		$this->_User = $this->_UserDao->load(Session::get('id'));		
-		$this->_view->_User = $this->_User;
-		$this->_view->Title = "Configuracion general de su cuenta";
-		$this->_view->renderView('index');
+	private function showUserData(){
+		$this->objUser = $this->objUserDao->load(Session::getSessionVariable('id'));		
+		$this->objView->objUser = $this->objUser;
+		$this->objView->strTitle = "Configuracion general de su cuenta";
+		$this->objView->renderView('index');
 		exit;
 	}
-	
-	public function setPass(){
-		$this->_view->Title = "Cambiar clave";
-		$this->_view->renderView('clave');
-		exit;
-	}
-	
-	public function guardarClave(){
-		if($_POST){
-			$this->_User = new UserModel();
-			$this->_User = $this->_UserDao->load(Session::get('id'));
-			$clave = $_POST['claveactual']; 
-			$pass1 = $_POST['pass1'];
-			$pass2 = $_POST['pass2'];
 			
-			if($pass1==$pass2 && $clave == $this->_User->pass  && strlen($pass1)>0 ){
-				
-				$this->_User->pass = $pass1;
-				if($this->_UserDao->setPass($this->_User)){
-					
-					$this->_view->Title = "Cambiar password";
-					$this->_view->mensaje = "Su password fue guardado correctamente.";
-					$this->_view->renderView('clave');
+
+	public function Register(){
+		$errors = array();
+		if($_POST){
+			$this->objUser->setstrName($_POST['name']);
+			$this->objUser->setstrLastName($_POST['lastname']);
+			$this->objUser->setstrEmail($_POST['email']);
+			$this->objUser->setstrUser($_POST['user']);
+			$this->objUser->setStrPassword($_POST['password']);
+			$this->objUser->setstrBirthday($_POST['birthday']);
+			if(!$this->isString($this->objUser->getStrName()))
+				$errors['name'] = 'Por favor introduzca un nombre valido';
+			if(!$this->isString($this->objUser->getStrLastName()))
+				$errors['lastname'] = 'Por favor introduzca un apellido valido';
+			if(!$this->isString($this->objUser->getStrEmail()))
+				$errors['email'] = 'Por favor introduzca una direccion de correo valido';
+			if(!$this->isString($this->objUser->getStrUser()))
+				$errors['user'] = 'Por favor introduzca un usuario valido';
+			if(!$this->isString($this->objUser->getStrPassword()))
+				$errors['password'] = 'Por favor introduzca una contraseña valida';
+			if(!$this->isString($this->objUser->getStrBirthday()))
+				$errors['birthday'] = 'Por favor introduzca una fecha valida';
+			if($this->objUserDao->create($this->objUser)){
+				$this->objView->objUser = $this->objUser;
+				$this->objView->strTitle = "Configuracion general de su cuenta";
+				if(count($errors)){
+					$this->objView->arrayErrors = $errors; //Carga la interfaz formulario error
+					$this->objView->strMessage = "Los cambios  no se guardaron correctamente";
+					$this->redirect('wall');
+				}
+				$this->objView->renderView('index');
+				exit;
+			}	
+		}
+	}
+	
+	public function editPassword(){
+		$this->objView->strTitle = "Cambiar clave";
+		$this->objView->renderView('password');
+		exit;
+	}
+	
+	public function updatePassword(){
+		if($_POST){
+			$this->objUser = $this->objUserDao->load(Session::getSessionVariable('id'));
+			$password = $_POST['password']; 
+			$password1 = $_POST['password1'];
+			$password2 = $_POST['password2'];
+			if($password1==$password2 && $password == $this->objUser->strPassword  && strlen($password1)>0 ){
+				$this->objUser->strPassword = $password1;
+				if($this->objUserDao->setStrPassword($this->objUser)){
+					$this->objView->strTitle = "Cambiar password";
+					$this->objView->strMessage = "Su password fue guardado correctamente.";
+					$this->objView->renderView('clave');
 					exit;
 				}
-			}
-			else {
-				$this->_view->Title = "Cambiar password";
-				$this->_view->mensaje = "Verifique sus datos";
-				$this->_view->renderView('clave');
+			}else{
+				$this->objView->strTitle = "Cambiar password";
+				$this->objView->strMessage = "Verifique sus datos";
+				$this->objView->renderView('password');
 				exit;
-			}
-				
+			}		
 		}
-		
-		$this->_view->Title = "Usted no deberia estar aqui";
-		$this->_view->renderView('estado');
-		exit;
 	}
 	
 	
-	public function guardar(){
+	public function updateUserData(){
 		
 		if($_POST){
-			$this->_User = new UserModel();
-			$this->_User->setUser($_POST['user']);
+			$this->objUser->setUser($_POST['user']);
 
-				if($this->_UserDao->savePerfil($this->_User)){
-				$this->_view->_User = $this->_User;
-				$this->_view->Title = "Configuracion general de su cuenta";
-				$this->_view->mensaje = "Los cambios se guardaron correctamente";
-				$this->_view->renderView('index');
+				if($this->objUserDao->updateProfile($this->objUser)){
+				$this->objView->objUser = $this->objUser;
+				$this->objView->strTitle = "Configuracion general de su cuenta";
+				$this->objView->strMessage = "Los cambios se guardaron correctamente";
+				$this->objView->renderView('index');
 				exit;
 			}
 			
 		}
-		
-		$this->_view->Title = "Usted no deberia estar aqui";
-		$this->_view->renderView('estado');
-		exit;
 	}
 	
 }

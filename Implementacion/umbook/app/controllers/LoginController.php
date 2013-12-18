@@ -7,53 +7,55 @@ class LoginController extends Controller{
 
 	public function __construct(){
 		parent::__construct();
-		$this->objUser = $this->loadModel('User');
+		$this->objUser = $this->objLoadModel('User');
 	}
 	
 	public function index(){}
 
-	public function validarUser(){
-		$errores = array();
+	public function validateUser(){
+		$errors = array();
 		if($_POST){
-			$this->objUser->setLogin($_POST['user'], $_POST['pass']);
-			if(!$this->esCadena($this->objUser->user))
-				$errores['user'] = 'Porfavor introduzca un User valido';
-			if(!$this->esCadena($this->objUser->pass))
-				$errores['pass'] = 'Porfavor introduzca una password valida';
-			if(count($errores))
-				$this->error($errores);  //Carga la interfaz formulario error
+			$this->objUser->setStrUser($_POST['user']);
+			$this->objUser->setstrPassword($_POST['password']);
+			if(!$this->isString($this->objUser->getStrUser()))
+				$errors['user'] = 'Por favor introduzca un usuario valido';
+			if(!$this->isString($this->objUser->getStrPassword()))
+				$errors['password'] = 'Por favor introduzca una contraseña valida';
+			if(count($errors))
+				$this->error($errors);  //Carga la interfaz formulario error
 
-			if($this->iniciarSesion())
-				$this->mostrarInicio();
-			else
+			if($this->login())
+				$this->showWall();
+			else{
 				$this->error();
+			}
 		}
 
 	} //REQUEST
 
-	public function iniciarSesion(){
+	public function login(){
 		require_once(DAOS_PATH ."UserDAO.php");
 		$objUserDao = new UserDAO();
-		if(! $this->id = $objUserDao->checkLogin($this))
+		if(! $this->id = $objUserDao->checkLogin($this->objUser))
 			return false;
-		Session::set('autenticado', true);
-		Session::set('User', $this->user);
-		Session::set('id', (int)$this->id);
+		Session::setSessionVariable('autenticate', true);
+		Session::setSessionVariable('User', $this->objUser->getStrUser());
+		Session::setSessionVariable('id', (int)$this->id);
 		return true;
 	}
 
-	public function cerrarSesion(){
-		Session::destroy();
+	public function logout(){
+		Session::destroySession();
 		$this->redirect('');
 	}
 
-	public function mostrarInicio(){
-		$this->redirect('inicio');
+	public function showWall(){
+		$this->redirect('wall');
 	}
 
-	public function error($errores = array()){
+	public function error($errors = array()){
 		$this->objView->strTitle = "Error en el login";
-		$this->objView->arrayErrores = $errores;
+		$this->objView->arrayErrors = $errors;
 		$this->objView->objUser = $this->objUser;
 		$this->objView->renderView('errorLogin');
 	}

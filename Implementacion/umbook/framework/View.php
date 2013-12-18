@@ -23,6 +23,7 @@ class View
         error_log(">>>>>>>> strRutaView: " . $strRutaView);
 
        if(is_readable($strRutaView)){
+            include PHP . "header.php";
             include_once $strRutaView;
        }else{
             throw new Exception('Error view');

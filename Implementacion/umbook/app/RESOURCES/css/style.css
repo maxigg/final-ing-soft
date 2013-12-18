@@ -1,0 +1,204 @@
+.body {
+	margin: 0;
+	background: rgba(73, 92, 180, 0.8);
+	font-family: Arial, sans-serif;
+}
+
+.table {
+	border-collapse: collapse;
+}
+
+.table td, .table th {
+	border: 1px silver solid;
+}
+
+.table td, .table th {
+	padding: 3px 6px;
+}
+
+.table td {
+	text-align: center;
+	vertical-align: top;
+}
+
+.ul {
+	list-style: circle;
+}
+a {
+	color: #045FB4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	background: rgba(20, 20, 20, 0.5);
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	height: 10%; /* Altura del footer */
+	clear: both;
+	position: relative;
+}
+
+.table {
+	max-width: 60%;
+	margin: 0 auto;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(100, 120, 120, 0.3);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+}
+
+.table th {
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(36, 136, 236, 0.5);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.table td {
+	border: 0px solid white;
+	margin: 10px auto;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#main {
+	position: relative;
+	margin: 0 auto 0 auto;
+	width: 900px;
+	padding-top: 20px;
+}
+
+#header {
+	width: 900px;
+	height: 100px;
+}
+
+#logo h1 {
+	color: #FFFFFF;
+	line-height: 60px;
+	text-shadow: 0 0 0;
+	margin: 0;
+}
+
+#content {
+	background: #999999;
+	color: #6E6E6E;
+	width: 830px;
+	padding: 20px 20px 20px 50px;
+	background: white;
+	font-family: "Trebuchet MS", sans-serif;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	overflow: hidden;
+}
+
+#content h1,h2 {
+	color: #0B3861;
+}
+
+.navbar-inverse .navbar-inner {
+	background: rgba(20, 20, 20, 0.8);
+	border: none;
+	text-align: center;
+}
+
+.nav-collapse .nav li a {
+	color: #999;
+	font-size: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-text-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+	-moz-text-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+	text-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hero-unit {
+	text-align: center;
+	margin: 2%;
+
+}
+
+.form {
+	margin: 0 auto;
+}
+
+.form-signin {
+	max-width: 60%;
+	padding: 19px 29px 29px;
+	margin: 20px auto 20px auto;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+	background-color: rgba(100, 120, 120, 0.3);
+}
+
+.form-signin input[type="text"],.form-signin input[type="file"],.form-signin input[type="password"],.controls input
+	{
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+.form-signin input[type="file"],select {
+	width: 50%;
+}
+
+.button {
+	font-size: 15px;
+	background-color: rgb(36, 136, 236);
+	color: rgb(255, 255, 255);
+	height: 30px;
+	vertical-align: middle;
+	text-align:center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-color: rgba(125, 125, 125, 0.5);
+}
+
+.form input[type="text"], .form textarea, .form input[type="password"], .form input[type="file"], .input {
+	padding: 5px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+	border: 1px solid white;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+	-webkit-transition: box-shadow 1s, background 1s, border 1s;
+	transition: box-shadow 1s, background 1s, border 1s;
+}
+
+.form input:hover, .form textarea:hover, .input:hover, .button2:hover {
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+	-webkit-transition: -webkit-box-shadow 1s, background 1s, border 1s;
+	transition: box-shadow 1s, background 1s, border 1s;
+	background: rgba(120, 145, 140, 0.8);
+	border: 2px solid white;
+}
+ 

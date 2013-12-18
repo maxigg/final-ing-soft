@@ -11,28 +11,19 @@ class UserDAO extends DAO {
 	 * clone() method in it!
 	 */
 
-	public $conn;
-
-	public function __construct(){
-		$this->conn = new Datasource();
-	}
-
-
-	function createValueObject() {
-		return new UserDAO();
-	}
-
-
 	function load($id) {
 
-		$sql = "SELECT id, user, pass FROM User WHERE (id = ".$id.") ";
+		$sql = "SELECT id, user, password, email, path_photo, notifications FROM user WHERE (id = ".$id.") ";
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 
 		foreach($result as $row) {
 			$temp = new UserModel();
-			$temp->setId($id);
-			$temp->setUser($row[1]);
-			$temp->setPass($row[2]);
+			$temp->setIntId($id);
+			$temp->setStrUser($row[1]);
+			$temp->setStrPassword($row[2]);
+			$temp->setStrEmail($row[3]);
+			$temp->setStrPathPhoto($row[4]);
+			$temp->setStrNotifications($row[5]);
 		}
 		return $temp;
 	}
@@ -41,7 +32,7 @@ class UserDAO extends DAO {
 	function loadAll() {
 
 
-		$sql = "SELECT * FROM User ORDER BY id ASC ";
+		$sql = "SELECT * FROM user ORDER BY id ASC ";
 
 		$searchResults = $this->listQuery($sql);
 
@@ -50,7 +41,7 @@ class UserDAO extends DAO {
 
 
 	function search($query){
-		$sql = "SELECT id, user, FROM  `User`
+		$sql = "SELECT id, user, FROM  `user`
 				WHERE
 				`user` LIKE  '%".$query."%'
 						LIMIT 0 , 30";
@@ -69,8 +60,9 @@ class UserDAO extends DAO {
 	 
 	function checkLogin($User) {
 
-
-		$sql = "SELECT id FROM User where user = '".$User->user."' and pass='".$User->pass."'";
+		/*var_dump($User);
+		exit();*/
+		$sql = "SELECT id FROM user where user = '".$User->strUser."' and password='".$User->strPassword."'";
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults=0;
 		foreach ($result as $row){
@@ -98,9 +90,23 @@ class UserDAO extends DAO {
 	 */
 	function create(&$valueObject) {
 
-		$sql = "INSERT INTO User (user, pass) VALUES ( ";
-		$sql = $sql."'".$valueObject->getUser()."', ";
-		$sql = $sql."'".$valueObject->getPass()."') ";
+		$sql = "INSERT INTO user (name, last_name, email, user, password, birthday) VALUES ( ";
+		$sql = $sql."'".$valueObject->getStrName()."', ";
+		$sql = $sql."'".$valueObject->getStrLastName()."', ";
+		$sql = $sql."'".$valueObject->getStrEmail()."', ";
+		$sql = $sql."'".$valueObject->getStrUser()."', ";
+		$sql = $sql."'".$valueObject->getStrPassword()."', ";
+		$sql = $sql."'".$valueObject->getStrBirthday()."') ";
+
+		$result = $this->boolEjecutarModificacionSQL($sql);
+
+		return $result;
+	}
+
+	public function createPathPhoto($pathPhoto){
+
+		$sql = "INSERT INTO user (path_photo) VALUES ( ";
+		$sql = $sql."'".$valueObject->getStrPathPhoto()."') ";
 
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
@@ -119,11 +125,12 @@ class UserDAO extends DAO {
 	 * @param valueObject  This parameter contains the class instance to be saved.
 	 *                     Primary-key field must be set for this to work properly.
 	 */
-	function save(&$valueObject) {
+	function update(&$valueObject) {
 
-		$sql = "UPDATE User SET user = '".$valueObject->getUser()."', ";
-		$sql = $sql."pass = '".$valueObject->getPass()."'";
-		$sql = $sql." WHERE (id = ".$valueObject->getId().") ";
+		$sql = "UPDATE user SET user = '".$valueObject->getStrUser()."', ";
+		$sql = $sql."email = '".$valueObject->getStrEmail()."',";
+		$sql = $sql."password = '".$valueObject->getStrPassword()."'";
+		$sql = $sql." WHERE (id = ".$valueObject->getIntId().") ";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		if ($result != 1) {
@@ -133,9 +140,9 @@ class UserDAO extends DAO {
 		return $result;
 	}
 
-	function saveProfile(&$valueObject) {
+	function updateProfile(&$valueObject) {
 
-		$sql = "UPDATE User SET user = '".$valueObject->getUser()."' ";
+		$sql = "UPDATE user SET user = '".$valueObject->getStrUser()."' ";
 		$sql = $sql." WHERE (id = ".Session::get('id').") ";
 		 
 		$result = $this->boolEjecutarModificacionSQL($sql);
@@ -147,9 +154,9 @@ class UserDAO extends DAO {
 	}
 
 
-	function setPass(&$valueObject) {
+	function updatePassword(&$valueObject) {
 
-		$sql = "UPDATE User SET pass = '".$valueObject->getPass()."'  WHERE (id = ".Session::get('id').")";
+		$sql = "UPDATE user SET password = '".$valueObject->getStrPassword()."'  WHERE (id = ".Session::get('id').")";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		if ($result != 1) {
@@ -170,13 +177,13 @@ class UserDAO extends DAO {
 	 * @param valueObject  This parameter contains the class instance to be deleted.
 	 *                     Primary-key field must be set for this to work properly.
 	 */
-	function delete(&$valueObject) {
+	function disableById(&$valueObject) {
 
-		if (!$valueObject->getId()) {
+		if (!$valueObject->getStrId()) {
 			return false;
 		}
-
-		$sql = "DELETE FROM User WHERE (id = ".$valueObject->getId().") ";
+		
+		$sql = "UPDATE user SET state=0 WHERE id=".$valueObject->getStrId()."";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		if ($result != 1) {
@@ -198,7 +205,7 @@ class UserDAO extends DAO {
 	 */
 	function deleteAll() {
 
-		$sql = "DELETE FROM User";
+		$sql = "DELETE FROM user";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		return $result;
@@ -215,7 +222,7 @@ class UserDAO extends DAO {
 	 */
 	function countAll() {
 
-		$sql = "SELECT count(*) FROM User";
+		$sql = "SELECT count(*) FROM user";
 		$allRows = 0;
 
 		$result = $this->arrayEjecutarConsultaSQL($sql);
@@ -245,27 +252,27 @@ class UserDAO extends DAO {
 	function searchMatching(&$valueObject) {
 
 		$first = true;
-		$sql = "SELECT * FROM User WHERE 1=1 ";
+		$sql = "SELECT * FROM user WHERE 1=1 ";
 
-		if ($valueObject->getId() != 0) {
+		if ($valueObject->getStrId() != 0) {
 			if ($first) {
 				$first = false;
 			}
-			$sql = $sql."AND id = ".$valueObject->getId()." ";
+			$sql = $sql."AND id = ".$valueObject->getStrId()." ";
 		}
 
-		if ($valueObject->getUser() != "") {
+		if ($valueObject->getStrUser() != "") {
 			if ($first) {
 				$first = false;
 			}
-			$sql = $sql."AND user LIKE '".$valueObject->getUser()."%' ";
+			$sql = $sql."AND user LIKE '".$valueObject->getStrUser()."%' ";
 		}
 
-		if ($valueObject->getPass() != "") {
+		if ($valueObject->getStrPassword() != "") {
 			if ($first) {
 				$first = false;
 			}
-			$sql = $sql."AND pass LIKE '".$valueObject->getPass()."%' ";
+			$sql = $sql."AND password LIKE '".$valueObject->getStrPassword()."%' ";
 		}
 
 

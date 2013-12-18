@@ -1,0 +1,1214 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"o",
+				"option	Tag"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"b",
+				"button"
+			],
+			[
+				"bo",
+				"button	Tag"
+			],
+			[
+				"for",
+				"FORM"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"html",
+				"html5	html5"
+			],
+			[
+				"Da",
+				"DAO"
+			],
+			[
+				"com",
+				"comm	Comment - Single-line block comment"
+			],
+			[
+				"Um",
+				"umbook"
+			],
+			[
+				"sea",
+				"searchResults"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"last",
+				"lastbidder"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"ar",
+				"arrayResult"
+			],
+			[
+				"arr",
+				"arrayResult"
+			],
+			[
+				"bid",
+				"bidSustract"
+			],
+			[
+				"us",
+				"userid"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"pr",
+				"premiumBidsTimeSum"
+			],
+			[
+				"end",
+				"endDateTime"
+			],
+			[
+				"set",
+				"setParameter"
+			],
+			[
+				"curr",
+				"currentPrice"
+			],
+			[
+				"s",
+				"style	HTML - Stylesheet link"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"p",
+				"participante"
+			],
+			[
+				"exe",
+				"db2_execute"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"tr",
+				"tree_root"
+			],
+			[
+				"r",
+				"reverse"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"auxcategor",
+				"auxcategories"
+			],
+			[
+				"id",
+				"id_category"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"a",
+				"admin"
+			],
+			[
+				"n",
+				"normalBids"
+			],
+			[
+				"fuc",
+				"function"
+			],
+			[
+				"im",
+				"img1Path"
+			],
+			[
+				"aux",
+				"aux2"
+			],
+			[
+				"Ex",
+				"exit"
+			],
+			[
+				"form",
+				"formData"
+			],
+			[
+				"PR",
+				"product"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"co",
+				"codes"
+			],
+			[
+				"c",
+				"code"
+			],
+			[
+				"functi",
+				"create_function"
+			],
+			[
+				"ST",
+				"startDateTime"
+			],
+			[
+				"e",
+				"endDateTime"
+			],
+			[
+				"st",
+				"startDateTime"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"ti",
+				"setStartDateTime"
+			],
+			[
+				"img2",
+				"img2Temp"
+			],
+			[
+				"imgT",
+				"img2Temp"
+			],
+			[
+				"img1",
+				"img1Temp"
+			],
+			[
+				"img",
+				"img1Temp"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"fil",
+				"file1"
+			],
+			[
+				"fi",
+				"file1"
+			],
+			[
+				"R",
+				"renderdata"
+			],
+			[
+				"VA",
+				"var_dump"
+			],
+			[
+				"CAT",
+				"catch"
+			],
+			[
+				"RE",
+				"result"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"product",
+				"products"
+			],
+			[
+				"B",
+				"ProductBundle"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"Pr",
+				"ProductsCategories"
+			],
+			[
+				"FC",
+				"FCProductBundle"
+			],
+			[
+				"em",
+				"getEntityManager"
+			],
+			[
+				"pat",
+				"pathCategoryAction"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"ad",
+				"add"
+			],
+			[
+				"S",
+				"Stof"
+			],
+			[
+				"de",
+				"descripcion"
+			],
+			[
+				"A",
+				"ArticleType"
+			],
+			[
+				"tim",
+				"timezone_open"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"has",
+				"hash"
+			],
+			[
+				"loa",
+				"loader"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"100",
+				"100px"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"pic",
+				"picture"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"fla",
+				"flag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
+			"settings":
+			{
+				"buffer_size": 1637,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
+			"settings":
+			{
+				"buffer_size": 1119,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
+			"settings":
+			{
+				"buffer_size": 1135,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
+			"settings":
+			{
+				"buffer_size": 2035,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
+			"settings":
+			{
+				"buffer_size": 958,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
+			"settings":
+			{
+				"buffer_size": 1113,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"commit",
+				"SVN: (File) Commit"
+			],
+			[
+				"upda",
+				"SVN: (File) Update"
+			],
+			[
+				"up",
+				"SVN: (File) Update"
+			],
+			[
+				"func",
+				"Snippet: function …"
+			],
+			[
+				"re",
+				"SVN: Relocate…"
+			],
+			[
+				"contru",
+				"Snippet: function __construct"
+			],
+			[
+				"fun",
+				"Snippet: function …"
+			],
+			[
+				"fu",
+				"Snippet: function …"
+			],
+			[
+				"comments",
+				"Snippet: Comment - Block style comment"
+			],
+			[
+				"comment",
+				"Snippet: Comment - Full section comment"
+			],
+			[
+				"comm",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"comme",
+				"Snippet: Comment - Section header comment"
+			],
+			[
+				"come",
+				"Snippet: Comment - Single-line block comment"
+			],
+			[
+				"svn",
+				"SVN: Update"
+			],
+			[
+				"fla",
+				"Snippet: Symfony2 / Controller / Set Flash"
+			],
+			[
+				"relo",
+				"SVN: Relocate…"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"u",
+				"SVN: Update"
+			],
+			[
+				"com",
+				"SVN: (File) Commit"
+			],
+			[
+				"co",
+				"SVN: Commit…"
+			],
+			[
+				"svn c",
+				"SVN: (Folder) Commit"
+			],
+			[
+				"svn u",
+				"SVN: Update"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"Snippet: html5"
+			],
+			[
+				"ht",
+				"Snippet: dochtml5"
+			],
+			[
+				"html",
+				"HTML: Wrap Selection With Tag"
+			]
+		],
+		"width": 383.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaVerNotificaciones.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaNotificacion.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarGrupo.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaAlbum.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarAlbum.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarAlbum.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGestionarSolicitudAmistad.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaBuscar.html",
+		"/C/wamp/www/final/Registrar.php",
+		"/C/wamp/www/umbook/APP/DAOS/UserDAO.php",
+		"/C/wamp/www/umbook/APP/MODELS/UserModel.php",
+		"/C/wamp/www/minutoaminuto/dao/usuarioDao.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DB/umbook.sql",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Request.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config_model.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Bootstrap.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/MODELS/UserModel.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/errorLogin.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/formularioLogin.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Controller.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/index.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/UserController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DAOS/UserDAO.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/LoginController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/View.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/IndexController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Index/index.php",
+		"/C/wamp/www/umbook/app/controllers/IndexController.php",
+		"/C/wamp/www/umbook/app/helpers/daos/UsuarioDAO.php",
+		"/C/wamp/www/umbook/app/controllers/LoginController.php",
+		"/C/wamp/www/umbook/framework/View.php",
+		"/C/wamp/www/umbook/app/views/login/formularioLogin.php",
+		"/C/wamp/www/umbook/app/views/login/errorLogin.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/config/config.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/header.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/Index/index.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/HolaMundo/holaMundo.php",
+		"/C/wamp/www/MVC_LIMPIO1/app/controllers/HolaMundoController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/models/UsuarioModel.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/helpers/daos/UsuarioDAO.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/LoginController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/IndexController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/web.config",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/footer.php",
+		"/C/wamp/www/minutoaminuto/views/layout/cibeles/footer.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/css/estilo.css",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/img/loading.gif",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/js/general.js",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/framework/DAO.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/helpers/daos/usuarioDao.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/EstructuraController.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/CargaController.php",
+		"/C/wamp/www/MVC_LIMPIO1/app/config/config.php",
+		"/C/wamp/www/MVC_LIMPIO1/app/controllers/EstructuraController.php",
+		"/C/wamp/www/MVC_LIMPIO1/app/BD/estructura.sql",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/config/config_model.php",
+		"/C/wamp/www/MVC_LIMPIO1/app/config/config_model.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/UsuarioController.php",
+		"/C/wamp/www/minutoaminuto/controllers/loginController.php",
+		"/C/wamp/www/minutoaminuto/models/usuarioModel.php",
+		"/C/wamp/www/minutoaminuto/controllers/usuarioController.php",
+		"/C/wamp/www/DragAndDrop/index.php",
+		"/D/aplicaciones android/razr d3/Archivos sistema original/vold.fstab",
+		"/D/aplicaciones android/razr d3/Archivos sistema original/vold.fstab.nand",
+		"/C/Users/Administrador/Downloads/SD por Interna/SD por Interna/vold.fstab",
+		"/C/Users/Administrador/Downloads/SD por Interna/SD por Interna/vold.fstab.nand",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/navbar.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/deportesController.php",
+		"/C/Users/Administrador/Dropbox/trabajo/minutoaminuto/views/layout/cibeles/navbar.php",
+		"/C/wamp/www/minutoaminuto/controllers/deportesController.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioModel.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioDao.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioController.php",
+		"/C/wamp/www/minutoaminuto/models/comentarioModel.php",
+		"/C/wamp/www/minutoaminuto/views/alineacion/buscar.phtml",
+		"/C/wamp/www/minutoaminuto/views/layout/cibeles/navbar.php",
+		"/C/wamp/www/minutoaminuto/views/login/errorLogin.phtml",
+		"/C/wamp/www/minutoaminuto/controllers/alineacionController.php",
+		"/C/wamp/www/minutoaminuto/controllers/comentariosController.php",
+		"/C/wamp/www/minutoaminuto/controllers/equiposController.php",
+		"/C/wamp/www/minutoaminuto/controllers/eventosController.php",
+		"/C/wamp/www/minutoaminuto/controllers/participantesController.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/formularioLogin.phtml",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/loginController.php",
+		"/C/wamp/www/minutoaminuto/views/eventos/Editar.phtml",
+		"/C/wamp/www/minutoaminuto/views/eventos/EditarMarcador.phtml",
+		"/C/wamp/www/minutoaminuto/views/eventos/formularioEvento.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/buscar.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/buscarEditar.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/buscarEliminar.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/Editar.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/formularioImagenParticipante.phtml",
+		"/C/wamp/www/minutoaminuto/views/participantes/formularioParticipante.phtml",
+		"/C/wamp/www/minutoaminuto/views/usuario/clave.phtml",
+		"/C/wamp/www/minutoaminuto/dao/alineacionDao.php",
+		"/C/wamp/www/minutoaminuto/views/eventos/buscarEliminar.phtml",
+		"/C/wamp/www/minutoaminuto/views/eventos/buscarEditar.phtml",
+		"/C/wamp/www/minutoaminuto/views/eventos/buscar.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/formularioImagenEquipo.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/Editar.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/formularioEquipo.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/buscarEliminar.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/buscarEditar.phtml",
+		"/C/wamp/www/minutoaminuto/views/equipos/buscar.phtml",
+		"/C/wamp/www/minutoaminuto/views/deportes/formularioImagenDeporte.phtml",
+		"/C/wamp/www/minutoaminuto/views/deportes/formularioDeporte.phtml",
+		"/C/wamp/www/minutoaminuto/views/deportes/buscarEliminar.phtml",
+		"/C/wamp/www/minutoaminuto/views/deportes/Editar.phtml",
+		"/C/wamp/www/minutoaminuto/views/deportes/buscar.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/EditarSuceso.phtml",
+		"/C/wamp/www/minutoaminuto/views/alineacion/formularioImagenAlineacion.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/Editar.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/formularioComentario.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/formularioImagenComentario.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/formularioImagenSuceso.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/lista.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/listaEliminar.phtml",
+		"/C/wamp/www/minutoaminuto/views/comentarios/crearSuceso.phtml",
+		"/C/wamp/www/minutoaminuto/views/alineacion/formularioAlineacion.phtml",
+		"/C/wamp/www/minutoaminuto/views/alineacion/buscarEliminar.phtml",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Request.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/header.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Config 2.php",
+		"/C/Users/Administrador/Dropbox/trabajo/doopress/web.config",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/View.php",
+		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Config.php",
+		"/C/wamp/www/minutoaminuto/web.config"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Administrador\\Documents\\facu\\4\\ingenieria de software\\final-ing-soft\\Implementacion\\umbook"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eliminar",
+			"editar",
+			"Grupo1 - 10 fotos",
+			"nuevo",
+			"eliminar1",
+			"Grupo",
+			"Eliminar",
+			"Album1",
+			"Agregar",
+			"1",
+			"Album",
+			"Foto",
+			"Agregar Foto",
+			"Guardar",
+			"Album",
+			"Agregar Foto",
+			"eliminar3",
+			"Album",
+			" <ul>\n                    <li>",
+			"    	<ul>\n",
+			"    	<ul>\n    	    <li>",
+			"busqueda",
+			"1",
+			"</button> ",
+			"</button>",
+			"</button> ",
+			"nombre",
+			"password",
+			"password<",
+			"password",
+			"nuevo",
+			"<li></li>",
+			"></",
+			"Album1 - 10 fotos",
+			"rechazar",
+			"usuario",
+			"input",
+			"Login",
+			"password",
+			"usuario",
+			"getId()",
+			"getUser()",
+			"getPass()",
+			" pass",
+			"SET pass",
+			"Pass",
+			"pass",
+			"Pass",
+			"pass",
+			"save",
+			"UPDATE User",
+			"FROM  `User`",
+			"`User`",
+			"FROM User",
+			"User",
+			"mensaje",
+			"album",
+			"Usuario",
+			"renderizar",
+			"armaPathParaCargarView",
+			"redireccionar",
+			"URLRelative",
+			"Vista",
+			"Titulo",
+			"Modelo",
+			"Nombre",
+			"DEFAULT_METOD",
+			"Metodo",
+			"Argumentos",
+			"Controlador",
+			"DEFAULT_METODO",
+			"app/views/layout/",
+			"validarDatos",
+			"renderizar",
+			"BASE_URL",
+			"$result = $this->databaseUpdate($sql);",
+			"databaseQuery($sql)",
+			"return false",
+			"return true",
+			"$UsuarioDao",
+			"usuarioDao",
+			"UsuarioDAO",
+			"usuarioDao",
+			"$this->_view",
+			"_usuario",
+			"$this->_view",
+			"pass",
+			"strPass",
+			"user",
+			"$user",
+			"usuarioDao",
+			"post",
+			"POST",
+			"post",
+			"POST",
+			"post",
+			"get",
+			"post",
+			"ost",
+			"post",
+			"POST",
+			"post",
+			"POST",
+			"post",
+			"$_POST",
+			"minutoaminuto_dev",
+			"h3",
+			"2",
+			"buscar",
+			"Nomal",
+			"NomalBids",
+			"Nomal",
+			"shipping",
+			"shippingPrice",
+			"Start",
+			"start",
+			"Start",
+			"start",
+			"Start",
+			"start",
+			"Start",
+			"start",
+			"Minimum",
+			"sportleon.com",
+			"div",
+			"h2",
+			"h6",
+			"h1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"User",
+			"renderView",
+			"redirect",
+			"View",
+			"Title",
+			"Model",
+			"Name",
+			"DEFAULT_METHOD",
+			"Method",
+			"Arguments",
+			"Controller",
+			"DEFAULT_METOD",
+			""
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
+					"settings":
+					{
+						"buffer_size": 1637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								800
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
+					"settings":
+					{
+						"buffer_size": 1119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1119,
+								1118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
+					"settings":
+					{
+						"buffer_size": 1135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
+					"settings":
+					{
+						"buffer_size": 2035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1971,
+								1971
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 435.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
+					"settings":
+					{
+						"buffer_size": 958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
+					"settings":
+					{
+						"buffer_size": 1113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								942,
+								942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 85.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Administrador/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+			],
+			[
+				"par",
+				"app/config/parameters.yml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true
+}

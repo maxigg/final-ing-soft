@@ -66,6 +66,24 @@ abstract class Controller
             exit;
         }
     }
+
+
+
+    public function isInteger($integer){
+        if(isset($integer) && !empty($integer)){
+            $integer = filter_input($integer, FILTER_VALIDATE_INT);
+            return $integer;
+        }
+        return 0;
+    }
+    
+    public function isString($string){
+        if(isset($string) && !empty($string)){
+            $string = htmlspecialchars($string, ENT_QUOTES);
+            return $string;
+        }
+        return '';
+    }
 }
 
 ?>
