@@ -16,7 +16,7 @@ class FriendController extends Controller
 
 	public function SendRequest(){
 		if($id){
-			$this->objFriendDao->createRequest($id);
+			$booleanFlag = $this->objFriendDao->createRequest($id);
 			$this->objView->strTitle = "Envio solicitud";
 			$this->objView->strMessage = "Se envio la solicitud de amistad";
 			$this->objView->renderView("index");		

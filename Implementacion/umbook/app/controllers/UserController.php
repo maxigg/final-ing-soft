@@ -111,7 +111,27 @@ class UserController extends Controller
 
 	public function searchUsers(){
 		if($_POST){
+			require_once DAOS_PATH ."FriendDAO.php";
+			$this->objFriendDao = new FriendDAO();
 			$arrayObjUserSearch = $this->objUserDao->getUsers($_POST['search']);
+			$arrayFlagsId = array();
+			$i=0;
+			foreach ($arrayObjUserSearch as $UserSearch) {
+				$arrayFriendsId = $this->objFriendDao->getFriendsId(Session::getSessionVariable('id'));
+				foreach ($arrayFriendsId as $FriendsId) {
+					if(($FriendsId[0] == $UserSearch->intId) || ($FriendsId[1] == $UserSearch->intId)){
+						$arrayFlagsId[$i] = 2;
+					}
+				}
+				$arrayFriendsRequestId = $this->objFriendDao->getFriendsRequestId(Session::getSessionVariable('id'));
+				foreach ($arrayFriendsRequestId as $FriendsRequestId) {
+					if(($FriendsRequestId[0] == $UserSearch->intId) || ($FriendsRequestId[1] == $UserSearch->intId)){
+						if($arrayFlagsId[$i]!=2)
+							$arrayFlagsId[$i] = 1;
+					}
+				}
+				$i++;
+			}
 			$this->objView->strTitle = "Lista de Usuarios";
 			$intCount = count($arrayObjUserSearch);
 			if($intCount>0){
@@ -119,6 +139,7 @@ class UserController extends Controller
 			}else{
 				$this->objView->strMessage = "No se encontraron coincidencias";
 			}
+			$this->objView->flagsId = $arrayFlagsId;
 			$this->objView->usersList = $arrayObjUserSearch;
 			$this->objView->renderView('usersList');
 			exit;

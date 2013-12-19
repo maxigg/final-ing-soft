@@ -26,11 +26,25 @@
 				<td><?php echo $user->strLastName;?></td>
 				<td><?php echo $user->strUser;?></td>
 				<td>
+					<?php 
+						foreach ($this->flagsId as $flagId) {
+							if($flagId == 2){
+					?>
+							<p>Ya es mi amigo</p>
+					<?php	
+							}elseif ($flagId == 1) {
+					?>
+							<p>Se le ha enviado solicitud</p>
+					<?php
+							}else{
+					?>
 					<a href="<?php echo BASE_URL.'friend/SendRequest/'.$user->intId.'/';?>" 
 						class="btn btn-info"><i class="icon-plus-sign"></i></a>
 				</td>
 			</tr>
-		<?php	
+		<?php
+							}	
+						}
 		}
 	?>
 		</table>

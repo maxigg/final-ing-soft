@@ -62,8 +62,6 @@ class UserDAO extends DAO {
 	 
 	function checkLogin($User) {
 
-		/*var_dump($User);
-		exit();*/
 		$sql = "SELECT id FROM user where user = '".$User->strUser."' and password='".$User->strPassword."'";
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults=0;
