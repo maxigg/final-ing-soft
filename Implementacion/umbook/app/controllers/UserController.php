@@ -56,7 +56,7 @@ class UserController extends Controller
 				}
 				Session::setSessionVariable('autenticate', true);
 				Session::setSessionVariable('User', $this->objUser->getStrUser());
-				Session::setSessionVariable('id', (int)$this->id);
+				Session::setSessionVariable('id', (int)$this->objUserDao->lastInsertId());
 				$this->objView->renderView('index');
 				exit;
 			}	
@@ -116,6 +116,7 @@ class UserController extends Controller
 			$arrayObjUserSearch = $this->objUserDao->getUsers($_POST['search']);
 			$arrayFlagsId = array();
 			$i=0;
+			$arrayFlagsId[$i] = 0;
 			foreach ($arrayObjUserSearch as $UserSearch) {
 				$arrayFriendsId = $this->objFriendDao->getFriendsId(Session::getSessionVariable('id'));
 				foreach ($arrayFriendsId as $FriendsId) {
