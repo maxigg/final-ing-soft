@@ -10,6 +10,10 @@ public function createRequest($idUser){
 	return $result;
 }
 
+public function removeRequest($idUser){
+
+}
+
 public function setFriend($idUser){
 	$sql = "INSERT INTO friend (id_user, id_friend) VALUES ( ";
 	$sql = $sql."'".Session::getSessionVariable('id')."', ";
@@ -19,17 +23,15 @@ public function setFriend($idUser){
 	return $result;
 }
 
-public function removeRequest($idUser){
-}
-
 public function unsetFriend($idUser){
+
 }
 
 public function getFriendsId($idUser){
 	$sql = "SELECT id_user, id_friend FROM friend WHERE id_user='".$idUser."' OR id_friend='".$idUser."'";
 	$result = $this->arrayEjecutarConsultaSQL($sql);
 	if($result) return $result;
-	else return false;	
+	else return false;
 }
 
 public function getFriendsRequestId($idUser){
