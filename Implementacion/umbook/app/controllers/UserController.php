@@ -1,6 +1,7 @@
 <?php
 
-class UserController extends Controller{
+class UserController extends Controller
+{
 	
 	private $objUser;
 	public $objUserDao; 
@@ -12,10 +13,6 @@ class UserController extends Controller{
 		$this->objUser = $this->objLoadModel('User');
 		require_once DAOS_PATH ."UserDAO.php";
 		$this->objUserDao = new UserDAO();
-	
-		if(!$User = Session::getSessionVariable('User')){
-			$this->redirect('');
-		}
 	}
 	
 	public function index(){
@@ -36,12 +33,7 @@ class UserController extends Controller{
 	public function Register(){
 		$errors = array();
 		if($_POST){
-			$this->objUser->setstrName($_POST['name']);
-			$this->objUser->setstrLastName($_POST['lastname']);
-			$this->objUser->setstrEmail($_POST['email']);
-			$this->objUser->setstrUser($_POST['user']);
-			$this->objUser->setStrPassword($_POST['password']);
-			$this->objUser->setstrBirthday($_POST['birthday']);
+			$this->objUser->setUserModel();
 			if(!$this->isString($this->objUser->getStrName()))
 				$errors['name'] = 'Por favor introduzca un nombre valido';
 			if(!$this->isString($this->objUser->getStrLastName()))
@@ -62,6 +54,9 @@ class UserController extends Controller{
 					$this->objView->strMessage = "Los cambios  no se guardaron correctamente";
 					$this->redirect('wall');
 				}
+				Session::setSessionVariable('autenticate', true);
+				Session::setSessionVariable('User', $this->objUser->getStrUser());
+				Session::setSessionVariable('id', (int)$this->id);
 				$this->objView->renderView('index');
 				exit;
 			}	
@@ -111,6 +106,22 @@ class UserController extends Controller{
 				exit;
 			}
 			
+		}
+	}
+
+	public function searchUsers(){
+		if($_POST){
+			$arrayObjUserSearch = $this->objUserDao->getUsers($_POST['search']);
+			$this->objView->strTitle = "Lista de Usuarios";
+			$intCount = count($arrayObjUserSearch);
+			if($intCount>0){
+				$this->objView->strMessage = "Se encontraron: ".$intCount." coincidencias";
+			}else{
+				$this->objView->strMessage = "No se encontraron coincidencias";
+			}
+			$this->objView->usersList = $arrayObjUserSearch;
+			$this->objView->renderView('usersList');
+			exit;
 		}
 	}
 	

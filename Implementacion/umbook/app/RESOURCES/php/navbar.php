@@ -34,8 +34,8 @@
 							<a href="<?php echo BASE_URL ."login/logout";?>">Cerrar Session</a>
 						</li>
 						<li>
-							<form  name="searchUser" method="post" action="<?php echo BASE_URL;?>friends/searchUsers/" class="form">
-								<input type="search" name="query" class="input-block-level" placeholder="Busqueda"/> 
+							<form  name="searchUser" method="post" action="<?php echo BASE_URL;?>user/searchUsers/" class="form">
+								<input type="search" name="search" class="input-block-level" placeholder="Busqueda"/> 
 							</form>
 						</li>
 					</ul>

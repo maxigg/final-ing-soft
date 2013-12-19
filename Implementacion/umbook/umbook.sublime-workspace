@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"strControllerExtern"
+			],
+			[
+				"obj",
+				"objFriendDao"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"td",
+				"TD	Tag"
+			],
+			[
+				"user",
+				"usersList"
+			],
+			[
+				"pa",
+				"path_photo"
+			],
+			[
+				"int",
+				"intCount"
+			],
+			[
+				"ar",
+				"arrayObjUserSearch"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"h5",
+				"H5	Tag"
+			],
+			[
+				"po",
+				"_POST"
+			],
+			[
+				"fu",
+				"fun	function …"
+			],
+			[
+				"path",
+				"pathPhoto"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"passw",
+				"password"
+			],
+			[
+				"use",
+				"User"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"show",
+				"showWall"
+			],
+			[
 				"u",
 				"ul	Tag"
 			],
@@ -84,10 +160,6 @@
 				"margin-left"
 			],
 			[
-				"pa",
-				"padding-right"
-			],
-			[
 				"au",
 				"auto"
 			],
@@ -104,10 +176,6 @@
 				"json_encode"
 			],
 			[
-				"ar",
-				"arrayResult"
-			],
-			[
 				"arr",
 				"arrayResult"
 			],
@@ -118,10 +186,6 @@
 			[
 				"us",
 				"userid"
-			],
-			[
-				"fun",
-				"fun	function …"
 			],
 			[
 				"pr",
@@ -360,10 +424,6 @@
 				"pathCategoryAction"
 			],
 			[
-				"th",
-				"this"
-			],
-			[
 				"fa",
 				"false"
 			],
@@ -386,10 +446,6 @@
 			[
 				"tim",
 				"timezone_open"
-			],
-			[
-				"fu",
-				"function"
 			],
 			[
 				"pu",
@@ -458,60 +514,88 @@
 			[
 				"data",
 				"dataType"
-			],
-			[
-				"fla",
-				"flag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
+			"file": "APP/CONFIG/config.php",
 			"settings":
 			{
-				"buffer_size": 1637,
+				"buffer_size": 1064,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
+			"file": "APP/CONTROLLERS/UserController.php",
 			"settings":
 			{
-				"buffer_size": 1119,
+				"buffer_size": 3993,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
+			"file": "APP/VIEWS/Friend/index.php",
 			"settings":
 			{
-				"buffer_size": 1135,
+				"buffer_size": 224,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
+			"file": "APP/RESOURCES/php/navbar.php",
 			"settings":
 			{
-				"buffer_size": 2035,
+				"buffer_size": 1315,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
+			"file": "APP/CONTROLLERS/LoginController.php",
 			"settings":
 			{
-				"buffer_size": 958,
+				"buffer_size": 1552,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
+			"file": "APP/DAOS/UserDAO.php",
 			"settings":
 			{
-				"buffer_size": 1113,
+				"buffer_size": 10784,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/User/usersList.php",
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/CONTROLLERS/FriendController.php",
+			"settings":
+			{
+				"buffer_size": 561,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/DAOS/FriendDAO.php",
+			"settings":
+			{
+				"buffer_size": 464,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/CONTROLLERS/IndexController.php",
+			"settings":
+			{
+				"buffer_size": 324,
 				"line_ending": "Windows"
 			}
 		}
@@ -668,26 +752,59 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/umbook/FRAMEWORK/View.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/menu.php",
+		"/C/wamp/www/umbook/APP/VIEWS/Login/errorLogin.php",
+		"/C/wamp/www/umbook/APP/VIEWS/Index/index.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/formRegister.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/password.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarAlbum.html",
+		"/C/wamp/www/umbook/APP/MODELS/UserModel.php",
+		"/C/wamp/www/minutoaminuto/views/participantes/lista.phtml",
+		"/C/wamp/www/umbook/APP/VIEWS/User/index.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/usersList",
+		"/C/wamp/www/umbook/APP/MODELS/AlbumModel.php",
+		"/C/wamp/www/umbook/APP/MODELS/PublicationModel.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/formEditUserData.php",
+		"/C/wamp/www/umbook/APP/CONTROLLERS/IndexController.php",
+		"/C/wamp/www/umbook/APP/VIEWS/User/register.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio- Formulario Login y Registro.html",
+		"/C/wamp/www/umbook/APP/VIEWS/Wall/index.php",
+		"/C/wamp/www/umbook/APP/RESOURCES/php/navbar.php",
+		"/C/wamp/www/umbook/APP/RESOURCES/php/header.php",
+		"/C/wamp/www/umbook/APP/RESOURCES/php/footer.php",
+		"/C/wamp/www/umbook/APP/RESOURCES/css/style.css",
+		"/C/Users/Administrador/AppData/Local/Temp/Rar$DIa0.549/navbar.css",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/formularioLogin.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/errorLogin.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaAlbum.html",
+		"/C/wamp/www/umbook/APP/CONTROLLERS/LoginController.php",
+		"/C/wamp/www/umbook/APP/CONTROLLERS/WallController.php",
+		"/C/wamp/www/umbook/APP/DAOS/UserDAO.php",
+		"/C/wamp/www/umbook/APP/CONFIG/config.php",
+		"/C/wamp/www/umbook/APP/VIEWS/Login/formLogin.php",
+		"/C/wamp/www/umbook/APP/CONTROLLERS/UserController.php",
+		"/C/wamp/www/umbook/FRAMEWORK/Controller.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaVerNotificaciones.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaNotificacion.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarGrupo.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaAlbum.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarAlbum.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarAlbum.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGestionarSolicitudAmistad.html",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaBuscar.html",
 		"/C/wamp/www/final/Registrar.php",
-		"/C/wamp/www/umbook/APP/DAOS/UserDAO.php",
-		"/C/wamp/www/umbook/APP/MODELS/UserModel.php",
 		"/C/wamp/www/minutoaminuto/dao/usuarioDao.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DB/umbook.sql",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Request.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config_model.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Bootstrap.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/MODELS/UserModel.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/errorLogin.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/formularioLogin.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Controller.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/index.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/UserController.php",
@@ -762,40 +879,7 @@
 		"/C/wamp/www/minutoaminuto/views/participantes/Editar.phtml",
 		"/C/wamp/www/minutoaminuto/views/participantes/formularioImagenParticipante.phtml",
 		"/C/wamp/www/minutoaminuto/views/participantes/formularioParticipante.phtml",
-		"/C/wamp/www/minutoaminuto/views/usuario/clave.phtml",
-		"/C/wamp/www/minutoaminuto/dao/alineacionDao.php",
-		"/C/wamp/www/minutoaminuto/views/eventos/buscarEliminar.phtml",
-		"/C/wamp/www/minutoaminuto/views/eventos/buscarEditar.phtml",
-		"/C/wamp/www/minutoaminuto/views/eventos/buscar.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/formularioImagenEquipo.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/Editar.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/formularioEquipo.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/buscarEliminar.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/buscarEditar.phtml",
-		"/C/wamp/www/minutoaminuto/views/equipos/buscar.phtml",
-		"/C/wamp/www/minutoaminuto/views/deportes/formularioImagenDeporte.phtml",
-		"/C/wamp/www/minutoaminuto/views/deportes/formularioDeporte.phtml",
-		"/C/wamp/www/minutoaminuto/views/deportes/buscarEliminar.phtml",
-		"/C/wamp/www/minutoaminuto/views/deportes/Editar.phtml",
-		"/C/wamp/www/minutoaminuto/views/deportes/buscar.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/EditarSuceso.phtml",
-		"/C/wamp/www/minutoaminuto/views/alineacion/formularioImagenAlineacion.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/Editar.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/formularioComentario.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/formularioImagenComentario.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/formularioImagenSuceso.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/lista.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/listaEliminar.phtml",
-		"/C/wamp/www/minutoaminuto/views/comentarios/crearSuceso.phtml",
-		"/C/wamp/www/minutoaminuto/views/alineacion/formularioAlineacion.phtml",
-		"/C/wamp/www/minutoaminuto/views/alineacion/buscarEliminar.phtml",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Request.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/header.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Config 2.php",
-		"/C/Users/Administrador/Dropbox/trabajo/doopress/web.config",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/View.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/Config.php",
-		"/C/wamp/www/minutoaminuto/web.config"
+		"/C/wamp/www/minutoaminuto/views/usuario/clave.phtml"
 	],
 	"find":
 	{
@@ -803,7 +887,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"C:\\Users\\Administrador\\Documents\\facu\\4\\ingenieria de software\\final-ing-soft\\Implementacion\\umbook"
@@ -814,6 +898,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"->objUser",
+			"delete",
+			"$objUser",
+			"$arrayErrors",
+			"$objUser",
+			"name",
+			"strLastName",
+			"strEmail",
+			"strBirthday",
+			"strPassword",
+			"strUser",
+			"user",
+			"BASE_URL . 'APP' . DS . 'RESOURCES' . DS",
+			"JS",
+			"class=\"button2\"",
+			"BASE_URL",
+			"user",
+			"mensaje",
+			"$objUserDao",
+			"->message",
+			"->Title",
+			"->pass",
+			"_view",
+			"->_User",
+			"$this->_User = new UserModel();",
+			"get",
+			"$this->_UserDao",
+			"getStrPassword()",
+			"getStrUser()",
+			"pass",
+			"getStrPassword()",
+			"->user",
+			"$User",
+			"user",
+			"User",
+			"errores",
+			"Errores",
+			"errores",
+			"strUser",
+			"set",
+			"esCadena",
+			"cadena",
+			"entero",
+			"loadModel",
 			"eliminar",
 			"editar",
 			"Grupo1 - 10 fotos",
@@ -897,51 +1025,7 @@
 			"usuarioDao",
 			"UsuarioDAO",
 			"usuarioDao",
-			"$this->_view",
-			"_usuario",
-			"$this->_view",
-			"pass",
-			"strPass",
-			"user",
-			"$user",
-			"usuarioDao",
-			"post",
-			"POST",
-			"post",
-			"POST",
-			"post",
-			"get",
-			"post",
-			"ost",
-			"post",
-			"POST",
-			"post",
-			"POST",
-			"post",
-			"$_POST",
-			"minutoaminuto_dev",
-			"h3",
-			"2",
-			"buscar",
-			"Nomal",
-			"NomalBids",
-			"Nomal",
-			"shipping",
-			"shippingPrice",
-			"Start",
-			"start",
-			"Start",
-			"start",
-			"Start",
-			"start",
-			"Start",
-			"start",
-			"Minimum",
-			"sportleon.com",
-			"div",
-			"h2",
-			"h6",
-			"h1"
+			"$this->_view"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -972,141 +1056,28 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
+					"file": "APP/CONFIG/config.php",
 					"settings":
 					{
-						"buffer_size": 1637,
+						"buffer_size": 1064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								800,
-								800
+								450,
+								441
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 336.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
-					"settings":
-					{
-						"buffer_size": 1119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1119,
-								1118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
-					"settings":
-					{
-						"buffer_size": 1135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								652,
-								652
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
-					"settings":
-					{
-						"buffer_size": 2035,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1971,
-								1971
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 435.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
-					"settings":
-					{
-						"buffer_size": 958,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								505,
-								503
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1115,29 +1086,241 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
+					"buffer": 1,
+					"file": "APP/CONTROLLERS/UserController.php",
 					"settings":
 					{
-						"buffer_size": 1113,
+						"buffer_size": 3993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								942,
-								942
+								3966,
+								3957
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1189.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "APP/VIEWS/Friend/index.php",
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "APP/RESOURCES/php/navbar.php",
+					"settings":
+					{
+						"buffer_size": 1315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "APP/CONTROLLERS/LoginController.php",
+					"settings":
+					{
+						"buffer_size": 1552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1552,
+								1552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "APP/DAOS/UserDAO.php",
+					"settings":
+					{
+						"buffer_size": 10784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3298,
+								2812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1109.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "APP/VIEWS/User/usersList.php",
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								910,
+								910
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "APP/CONTROLLERS/FriendController.php",
+					"settings":
+					{
+						"buffer_size": 561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 85.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "APP/DAOS/FriendDAO.php",
+					"settings":
+					{
+						"buffer_size": 464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "APP/CONTROLLERS/IndexController.php",
+					"settings":
+					{
+						"buffer_size": 324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1209,6 +1392,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 178.0,
+	"side_bar_width": 127.0,
 	"status_bar_visible": true
 }

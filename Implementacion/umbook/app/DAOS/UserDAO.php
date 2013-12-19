@@ -40,18 +40,20 @@ class UserDAO extends DAO {
 	}
 
 
-	function search($query){
-		$sql = "SELECT id, user, FROM  `user`
+	function getUsers($query){
+		$sql = "SELECT id, user, name, last_name, path_photo FROM  `user`
 				WHERE
-				`user` LIKE  '%".$query."%'
-						LIMIT 0 , 30";
+				`user` LIKE '%".$query."%' OR `name` LIKE '%".$query."%' OR `last_name` LIKE '%".$query."%' AND role=0";
 
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults = array();
 		foreach($result as $row) {		 
 			$temp = new UserModel();		 
-			$temp->setId($row[0]);
-			$temp->setUser($row[1]);			 
+			$temp->setintId($row[0]);
+			$temp->setStrUser($row[1]);
+			$temp->setStrName($row[2]);
+			$temp->setStrLastName($row[3]);
+			$temp->setStrPathPhoto($row[4]);			 
 			array_push($searchResults, $temp);
 		}
 		return $searchResults;
@@ -106,7 +108,7 @@ class UserDAO extends DAO {
 	public function createPathPhoto($pathPhoto){
 
 		$sql = "INSERT INTO user (path_photo) VALUES ( ";
-		$sql = $sql."'".$valueObject->getStrPathPhoto()."') ";
+		$sql = $sql."'".$pathPhoto."') ";
 
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
@@ -182,7 +184,7 @@ class UserDAO extends DAO {
 		if (!$valueObject->getStrId()) {
 			return false;
 		}
-		
+
 		$sql = "UPDATE user SET state=0 WHERE id=".$valueObject->getStrId()."";
 		$result = $this->boolEjecutarModificacionSQL($sql);
 

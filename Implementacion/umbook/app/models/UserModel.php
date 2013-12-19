@@ -18,6 +18,16 @@ class UserModel {
     public $arrayobjPublicationPublications;
     public $arrayobjUserFriends;
 
+
+    public function setUserModel(){
+        $this->setstrName($_POST['name']);
+        $this->setstrLastName($_POST['lastname']);
+        $this->setstrEmail($_POST['email']);
+        $this->setstrUser($_POST['user']);
+        $this->setStrPassword($_POST['password']);
+        $this->setstrBirthday($_POST['birthday']);
+    }
+
     /**
      * Gets the value of intId.
      *

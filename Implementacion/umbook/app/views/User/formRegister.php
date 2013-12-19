@@ -1,5 +1,5 @@
   <?php if(isset($this->strMessage)) echo '<h3 style="color:red;">' . $this->strMessage  .'<br><br></h3>'; ?>
-  <form name="formUser" id="formUser" method="post" action="<?php echo BASE_URL;?>user/Register/" class="form-signin form">
+  <form name="formUser" id="formUser" method="post" action="<?php echo BASE_URL;?>user/Register" class="form-signin form">
     <label for="nombre">nombre</label>
     <input type="text" name="name" id="name" value="<?php if(isset($this->objUser->strName)) echo $this->objUser->strName;?>" class="input-xlarge"/>
     <?php if(array_key_exists('name',$this->arrayErrors)) echo $this->arrayErrors['name'];?>
