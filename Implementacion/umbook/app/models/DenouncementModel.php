@@ -5,6 +5,32 @@ class DenouncementModel {
 	public $intId;
     public $objUserUser;
     public $intIdResource;
+	public $strType;
+  
+  
+      /**
+     * Gets the value of strType.
+     *
+     * @return mixed
+     */
+    public function getStrType()
+    {
+        return $this->strType;
+    }
+
+    /**
+     * Sets the value of intId.
+     *
+     * @param mixed $str Type
+     *
+     * @return self
+     */
+    public function setStrType($strType)
+    {
+        $this->strType = $strType;
+
+        return $this;
+    }
   
     /**
      * Gets the value of intId.
