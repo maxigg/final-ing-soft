@@ -10,6 +10,10 @@ public function createRequest($idUser){
 	return $result;
 }
 
+public function removeRequest($idUser){
+
+}
+
 public function setFriend($idUser){
 	$sql = "UPDATE request SET state = 1";
 	$sql = $sql." WHERE (id_sender = ".$idUser." AND id_receiver=".Session::getSessionVariable('id').") ";
@@ -25,6 +29,7 @@ public function setFriend($idUser){
 	return $result;
 }
 
+<<<<<<< HEAD
 public function removeRequest($idUser){
 	$sql = "UPDATE request SET state = 2";
 	$sql = $sql." WHERE (id_receiver = ".Session::getSessionVariable('id')." id_sender=".$idUser.") ";
@@ -35,14 +40,17 @@ public function removeRequest($idUser){
 	return $result;
 }
 
+=======
+>>>>>>> fc386adb6670936003779ad9baaf47cdad81e52e
 public function unsetFriend($idUser){
+
 }
 
 public function getFriendsId($idUser){
 	$sql = "SELECT id_user, id_friend FROM friend WHERE id_user='".$idUser."' OR id_friend='".$idUser."'";
 	$result = $this->arrayEjecutarConsultaSQL($sql);
 	if($result) return $result;
-	else return false;	
+	else return false;
 }
 
 public function getFriendsRequestId($idUser){
