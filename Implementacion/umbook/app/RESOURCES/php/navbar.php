@@ -16,16 +16,16 @@
 							<a href="<?php echo BASE_URL ."wall";?>">Inicio</a>
 						</li>
 						<li>
-							<a href="<?php echo BASE_URL ."notifications";?>">Notificaciones</a>
+							<a href="<?php echo BASE_URL ."notification";?>">Notificaciones</a>
 						</li>
 						<li>
-							<a href="<?php echo BASE_URL ."requests";?>">Solicitudes</a>
+							<a href="<?php echo BASE_URL ."friend/ListRequest";?>">Solicitudes</a>
 						</li>
 						<li>
-							<a href="<?php echo BASE_URL ."albums";?>">Albumes</a>
+							<a href="<?php echo BASE_URL ."album";?>">Albumes</a>
 						</li>
 						<li>
-							<a href="<?php echo BASE_URL ."friends";?>">Amigos</a>
+							<a href="<?php echo BASE_URL ."friend";?>">Amigos</a>
 						</li>
 						<li>
 							<a href="<?php echo BASE_URL ."user";?>">Modificar Perfil</a>

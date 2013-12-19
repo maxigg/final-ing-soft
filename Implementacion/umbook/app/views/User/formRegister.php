@@ -12,10 +12,10 @@
     <label for="user">Usuario: </label>
     <input type="text" name="user" id="user" value="<?php if(isset($this->objUser->strUser)) echo $this->objUser->strUser;?>" class="input-xlarge"/>
     <?php if(array_key_exists('user',$this->arrayErrors)) echo $this->arrayErrors['user'];?>
-    <label for="user">Contraseña: </label>
-    <input type="text" name="password" id="password" value="<?php if(isset($this->objUser->strPassword)) echo $this->objUser->strPassword;?>" class="input-xlarge"/>
+    <label for="password">Contraseña: </label>
+    <input type="password" name="password" id="password" value="<?php if(isset($this->objUser->strPassword)) echo $this->objUser->strPassword;?>" class="input-xlarge"/>
     <?php if(array_key_exists('password',$this->arrayErrors)) echo $this->arrayErrors['password'];?>
-    <label for="user">Fecha de nacimiento: </label>
+    <label for="date">Fecha de nacimiento: </label>
     <input type="date" name="birthday" id="birthday" value="<?php if(isset($this->objUser->strBirthday)) echo $this->objUser->strBirthday;?>" class="input-xlarge"/>
     <?php if(array_key_exists('birthday',$this->arrayErrors)) echo $this->arrayErrors['birthday'];?>
     <br>

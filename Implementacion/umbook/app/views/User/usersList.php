@@ -5,8 +5,7 @@
 	</h2>
 	<?php 
 		if(isset($this->strMessage)) echo '<h3 style="color:red;">' . $this->strMessage  .'<br><br></h3>'; 
-			include VIEW_PATH . "User" . DS . "menu.php";
-		if(isset($this->usersList)){ 
+		if(isset($this->usersList) && count($this->usersList)>0){ 
 	?>
 	<div>
 		<table class="table-striped" width="80%">
@@ -40,14 +39,18 @@
 					?>
 					<a href="<?php echo BASE_URL.'friend/SendRequest/'.$user->intId.'/';?>" 
 						class="btn btn-info"><i class="icon-plus-sign"></i></a>
+					<?php
+						}
+					?>	
 				</td>
 			</tr>
-		<?php
-							}	
-						}
+		<?php		
+				}
 		}
 	?>
 		</table>
 	</div>
+	<?php }else{ ?>
+		<p>La busqueda no ha arrojado Resultados</p>
 	<?php } ?>
 </div>    

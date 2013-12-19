@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"fr",
+				"friendRequestList"
+			],
+			[
+				"f",
+				"friendRequest"
+			],
+			[
+				"tempa",
+				"tempaux"
+			],
+			[
+				"id",
+				"id_sender"
+			],
+			[
+				"getFr",
+				"getFriendsRequestId"
+			],
+			[
+				"ob",
+				"objUserDao"
+			],
+			[
+				"ar",
+				"arrayFlagsId"
+			],
+			[
+				"friend",
+				"FriendsRequestIdId"
+			],
+			[
+				"Friends",
+				"friendsRequestId"
+			],
+			[
+				"Fr",
+				"friendsId"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"arrayFriends",
+				"arrayFriendsRequestId"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"arr",
+				"arrayFriendsId"
+			],
+			[
+				"bo",
+				"booleanFlag"
+			],
+			[
 				"str",
 				"strControllerExtern"
 			],
@@ -34,10 +102,6 @@
 			[
 				"int",
 				"intCount"
-			],
-			[
-				"ar",
-				"arrayObjUserSearch"
 			],
 			[
 				"err",
@@ -100,20 +164,8 @@
 				"button"
 			],
 			[
-				"bo",
-				"button	Tag"
-			],
-			[
-				"for",
-				"FORM"
-			],
-			[
 				"in",
 				"input	Tag"
-			],
-			[
-				"f",
-				"form	Tag"
 			],
 			[
 				"html",
@@ -176,16 +228,8 @@
 				"json_encode"
 			],
 			[
-				"arr",
-				"arrayResult"
-			],
-			[
 				"bid",
 				"bidSustract"
-			],
-			[
-				"us",
-				"userid"
 			],
 			[
 				"pr",
@@ -254,10 +298,6 @@
 			[
 				"auxcategor",
 				"auxcategories"
-			],
-			[
-				"id",
-				"id_category"
 			],
 			[
 				"pro",
@@ -472,48 +512,8 @@
 				"padding-top"
 			],
 			[
-				"fo",
-				"font-size"
-			],
-			[
 				"100",
 				"100px"
-			],
-			[
-				"cl",
-				"clear"
-			],
-			[
-				"d",
-				"display"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"m",
-				"margin"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"mi",
-				"min-width"
-			],
-			[
-				"i",
-				"id"
-			],
-			[
-				"pic",
-				"picture"
-			],
-			[
-				"data",
-				"dataType"
 			]
 		]
 	},
@@ -531,7 +531,7 @@
 			"file": "APP/CONTROLLERS/UserController.php",
 			"settings":
 			{
-				"buffer_size": 3993,
+				"buffer_size": 4887,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "APP/RESOURCES/php/navbar.php",
 			"settings":
 			{
-				"buffer_size": 1315,
+				"buffer_size": 1322,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "APP/DAOS/UserDAO.php",
 			"settings":
 			{
-				"buffer_size": 10784,
+				"buffer_size": 10751,
 				"line_ending": "Windows"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "APP/VIEWS/User/usersList.php",
 			"settings":
 			{
-				"buffer_size": 924,
+				"buffer_size": 1247,
 				"line_ending": "Windows"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "APP/CONTROLLERS/FriendController.php",
 			"settings":
 			{
-				"buffer_size": 561,
+				"buffer_size": 1361,
 				"line_ending": "Windows"
 			}
 		},
@@ -587,7 +587,15 @@
 			"file": "APP/DAOS/FriendDAO.php",
 			"settings":
 			{
-				"buffer_size": 464,
+				"buffer_size": 1905,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/Friend/requestList.php",
+			"settings":
+			{
+				"buffer_size": 1234,
 				"line_ending": "Windows"
 			}
 		},
@@ -596,6 +604,14 @@
 			"settings":
 			{
 				"buffer_size": 324,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/MODELS/RequestModel.php",
+			"settings":
+			{
+				"buffer_size": 1819,
 				"line_ending": "Windows"
 			}
 		}
@@ -752,11 +768,12 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/umbook/APP/VIEWS/User/formRegister.php",
+		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DB/umbook.sql",
 		"/C/wamp/www/umbook/FRAMEWORK/View.php",
 		"/C/wamp/www/umbook/APP/VIEWS/User/menu.php",
 		"/C/wamp/www/umbook/APP/VIEWS/Login/errorLogin.php",
 		"/C/wamp/www/umbook/APP/VIEWS/Index/index.php",
-		"/C/wamp/www/umbook/APP/VIEWS/User/formRegister.php",
 		"/C/wamp/www/umbook/APP/VIEWS/User/password.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarAlbum.html",
 		"/C/wamp/www/umbook/APP/MODELS/UserModel.php",
@@ -800,7 +817,6 @@
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaBuscar.html",
 		"/C/wamp/www/final/Registrar.php",
 		"/C/wamp/www/minutoaminuto/dao/usuarioDao.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DB/umbook.sql",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Request.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config_model.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Bootstrap.php",
@@ -898,6 +914,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"friendRequest",
+			"user",
+			"$temp",
+			"user",
+			"User",
+			"$idUser",
 			"->objUser",
 			"delete",
 			"$objUser",
@@ -1019,13 +1041,7 @@
 			"BASE_URL",
 			"$result = $this->databaseUpdate($sql);",
 			"databaseQuery($sql)",
-			"return false",
-			"return true",
-			"$UsuarioDao",
-			"usuarioDao",
-			"UsuarioDAO",
-			"usuarioDao",
-			"$this->_view"
+			"return false"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1056,7 +1072,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1071,8 +1087,8 @@
 						"selection":
 						[
 							[
-								450,
-								441
+								0,
+								1064
 							]
 						],
 						"settings":
@@ -1090,15 +1106,15 @@
 					"file": "APP/CONTROLLERS/UserController.php",
 					"settings":
 					{
-						"buffer_size": 3993,
+						"buffer_size": 4887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3966,
-								3957
+								3768,
+								3768
 							]
 						],
 						"settings":
@@ -1107,7 +1123,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1189.0,
+						"translation.y": 1554.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1143,15 +1159,15 @@
 					"file": "APP/RESOURCES/php/navbar.php",
 					"settings":
 					{
-						"buffer_size": 1315,
+						"buffer_size": 1322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1108,
-								1108
+								632,
+								632
 							]
 						],
 						"settings":
@@ -1177,8 +1193,8 @@
 						"selection":
 						[
 							[
-								1552,
-								1552
+								954,
+								944
 							]
 						],
 						"settings":
@@ -1187,7 +1203,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 251.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1197,15 +1213,15 @@
 					"file": "APP/DAOS/UserDAO.php",
 					"settings":
 					{
-						"buffer_size": 10784,
+						"buffer_size": 10751,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3298,
-								2812
+								1323,
+								1644
 							]
 						],
 						"settings":
@@ -1214,7 +1230,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1109.0,
+						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1224,20 +1240,21 @@
 					"file": "APP/VIEWS/User/usersList.php",
 					"settings":
 					{
-						"buffer_size": 924,
+						"buffer_size": 1247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								910,
-								910
+								767,
+								767
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1250,15 +1267,15 @@
 					"file": "APP/CONTROLLERS/FriendController.php",
 					"settings":
 					{
-						"buffer_size": 561,
+						"buffer_size": 1361,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								186,
-								186
+								707,
+								707
 							]
 						],
 						"settings":
@@ -1277,20 +1294,47 @@
 					"file": "APP/DAOS/FriendDAO.php",
 					"settings":
 					{
-						"buffer_size": 464,
+						"buffer_size": 1905,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								1233,
+								1233
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "APP/VIEWS/Friend/requestList.php",
+					"settings":
+					{
+						"buffer_size": 1234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1299,7 +1343,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "APP/CONTROLLERS/IndexController.php",
 					"settings":
 					{
@@ -1321,6 +1365,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "APP/MODELS/RequestModel.php",
+					"settings":
+					{
+						"buffer_size": 1819,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								865,
+								857
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1392,6 +1464,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 127.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true
 }
