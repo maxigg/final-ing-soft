@@ -1,8 +1,8 @@
 <?php 
 class WallController extends Controller{
 	
-	private $objPublication;
 	public $objPublicationDao; 
+	
 
 	public function __construct(){
 		parent::__construct();
@@ -11,15 +11,19 @@ class WallController extends Controller{
 			$this->redirect('');
 		}
 
-		/* ------------------------------------------------
-		$this->objUser = $this->objLoadModel('User');
-		require_once DAOS_PATH ."UserDAO.php";
-		$this->objUserDao = new UserDAO();
-		*/
+		require_once DAOS_PATH ."PublicationDAO.php";
+		
+		$this->objPublicationDao = new PublicationDAO();
 		
 	}
 	
 	public function index(){
+		$id = Session::getSessionVariable('id');
+		$wall = array();
+
+		$wall = $this->objPublicationDao->getPublications($id);
+		$this->objView->publications = $wall;
+
 		$this->objView->strTitle = APP_NAME;
 		$this->objView->renderView('index');
 	}
