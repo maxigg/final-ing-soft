@@ -1,11 +1,11 @@
 <?php
-
-define('DS', DIRECTORY_SEPARATOR);
+//define('DS', DIRECTORY_SEPARATOR);
+define('DS', '/');
 define('ROOT','C:\\wamp\\www\\umbook\\');  
 
 //depende orden
 define('FRAMEWORK_PATH', ROOT . 'FRAMEWORK' . DS);
-define('APP_PATH', ROOT . 'app' . DS);
+define('APP_PATH', ROOT . 'APP' . DS);
 define('DAOS_PATH', APP_PATH .  'DAOS' . DS);
 define('RESOURCES_PATH', APP_PATH .  'RESOURCES' . DS);
 define('MODELS_PATH', APP_PATH . 'MODELS' . DS);

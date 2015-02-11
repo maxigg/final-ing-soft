@@ -1,30 +1,40 @@
-<?php 
-class WallController extends Controller{
+<?php
+
+class WallController extends Controller {
 	
-	public $objPublicationDao; 
-	
+	private $objUser;
+	private $arrayObjPublications = array(); 
+	private $objPublicationDao;
 
 	public function __construct(){
+		error_log(__METHOD__);
 		parent::__construct();
-		
-		if(!$user = Session::getSessionVariable('User')){
+
+		$this->objUser = Session::getSessionVariable('objUser');
+		if( !isset($this->objUser) )
 			$this->redirect('');
-		}
 
 		require_once DAOS_PATH ."PublicationDAO.php";
-		
 		$this->objPublicationDao = new PublicationDAO();
-		
 	}
 	
 	public function index(){
-		$id = Session::getSessionVariable('id');
-		$wall = array();
 
-		$wall = $this->objPublicationDao->getPublications($id);
-		$this->objView->publications = $wall;
+		$arrayObjPublications = array();
+		$arrayObjPublications = $this->objPublicationDao->getPublications($this->objUser);
+		
+		//print_r($arrayObjPublications);die();
 
-		$this->objView->strTitle = APP_NAME;
+		foreach ($arrayObjPublications as $objPublication) {
+			$objLoadedPublication = new PublicationModel();
+			$objLoadedPublication = $this->objPublicationDao->getComments($objPublication);
+			array_push($this->arrayObjPublications, $objLoadedPublication);
+		}
+		
+		//print_r($this->arrayObjPublications);die();
+		
+		$this->objView->arrayObjPublications = $this->arrayObjPublications;
+		$this->objView->strTitle = "Muro";
 		$this->objView->renderView('index');
 	}
 	

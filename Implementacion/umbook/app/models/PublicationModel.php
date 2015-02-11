@@ -2,12 +2,11 @@
 
 class PublicationModel {
 	
-	public $intId;
-    public $strOwner;
-    public $strPublisher;
-    public $strDate;
-	public $strMessage;
-	public $arrayObjCommentComments;
+	private $intId;
+    private $intIdOwner;
+    private $strDate;
+	private $strMessage;
+	private $arrayObjComments;
 
     /**
      * Gets the value of intId.
@@ -38,45 +37,21 @@ class PublicationModel {
      *
      * @return mixed
      */
-    public function getStrOwner()
+    public function getIntIdOwner()
     {
-        return $this->strOwner;
+        return $this->intIdOwner;
     }
 
     /**
-     * Sets the value of strOwner.
+     * Sets the value of intIdOwner.
      *
-     * @param mixed $strOwner the str owner
+     * @param mixed $intIdOwner the Id of the owner
      *
      * @return self
      */
-    public function setStrOwner($strOwner)
+    public function setIntIdOwner($intIdOwner)
     {
-        $this->strOwner = $strOwner;
-
-        return $this;
-    }
-
-    /**
-     * Gets the value of strPublisher.
-     *
-     * @return mixed
-     */
-    public function getStrPublisher()
-    {
-        return $this->strPublisher;
-    }
-
-    /**
-     * Sets the value of strPublisher.
-     *
-     * @param mixed $strPublisher the str publisher
-     *
-     * @return self
-     */
-    public function setStrPublisher($strPublisher)
-    {
-        $this->strPublisher = $strPublisher;
+        $this->intIdOwner = $intIdOwner;
 
         return $this;
     }
@@ -130,25 +105,25 @@ class PublicationModel {
     }
 
     /**
-     * Gets the value of arrayObjCommentComments.
+     * Gets the value of arrayObjComments.
      *
      * @return mixed
      */
-    public function getArrayObjCommentComments()
+    public function getArrayObjComments()
     {
-        return $this->arrayObjCommentComments;
+        return $this->arrayObjComments;
     }
 
     /**
-     * Sets the value of arrayObjCommentComments.
+     * Sets the value of arrayObjComments.
      *
-     * @param mixed $arrayObjCommentComments the array obj commentComments
+     * @param mixed $arrayObjComments the array obj Comments
      *
      * @return self
      */
-    public function setArrayObjCommentComments($arrayObjCommentComments)
+    public function setArrayObjComments($arrayObjComments)
     {
-        $this->arrayObjCommentComments = $arrayObjCommentComments;
+        $this->arrayObjComments = $arrayObjComments;
 
         return $this;
     }

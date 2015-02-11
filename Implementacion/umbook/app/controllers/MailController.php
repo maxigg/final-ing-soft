@@ -1,11 +1,11 @@
 <?php
 
-class MailController extends Controller{
+class MailController extends Controller {
 	
 	public $objUserDao;
 
 	public function __construct(){
-		error_log( __FILE__  ." >  > ".__METHOD__);
+		error_log(__METHOD__);
         parent::__construct();
 		require_once DAOS_PATH ."UserDAO.php";
 		$this->objuserdDao = new UserDAO();

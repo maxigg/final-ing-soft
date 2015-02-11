@@ -2,11 +2,13 @@
 
 class CommentModel {
 	
-	public $intId;
-    public $strMessage;
-    public $strData;
-    public $intIdResource;
-	public $objUserOwner;
+	private $intId;
+    private $intIdResource;
+    private $objUserOwner;
+    private $strMessage;
+    private $strDate;
+    private $intResourceType; // 1-> Publication | 2->Picture
+	
 
     /**
      * Gets the value of intId.
@@ -57,25 +59,25 @@ class CommentModel {
     }
 
     /**
-     * Gets the value of strData.
+     * Gets the value of strDate.
      *
      * @return mixed
      */
-    public function getStrData()
+    public function getStrDate()
     {
-        return $this->strData;
+        return $this->strDate;
     }
 
     /**
-     * Sets the value of strData.
+     * Sets the value of strDate.
      *
-     * @param mixed $strData the str data
+     * @param mixed $strDate the str date
      *
      * @return self
      */
-    public function setStrData($strData)
+    public function setStrDate($strDate)
     {
-        $this->strData = $strData;
+        $this->strDate = $strDate;
 
         return $this;
     }
@@ -127,6 +129,31 @@ class CommentModel {
 
         return $this;
     }
+
+    /**
+     * Gets the Resource Type.
+     *
+     * @return mixed
+     */
+    public function getIntResourceType()
+    {
+        return $this->intResourceType;
+    }
+
+    /**
+     * Sets the Resource Type.
+     *
+     * @param mixed $intResourceType the int Type id
+     *
+     * @return self
+     */
+    public function setIntResourceType($intResourceType)
+    {
+        $this->intResourceType = $intResourceType;
+
+        return $this;
+    }
+
 }
 
 ?>

@@ -4,7 +4,7 @@ class RequestModel {
 	
 	public $intId;
     public $intState;
-    public $objUserOwner;
+    public $objUserSender;
 	public $objUserReceiver;
 
     /**
@@ -56,25 +56,25 @@ class RequestModel {
     }
 
     /**
-     * Gets the value of objUserOwner.
+     * Gets the value of objUserSender.
      *
      * @return mixed
      */
-    public function getObjUserOwner()
+    public function getobjUserSender()
     {
-        return $this->objUserOwner;
+        return $this->objUserSender;
     }
 
     /**
-     * Sets the value of objUserOwner.
+     * Sets the value of objUserSender.
      *
-     * @param mixed $objUserOwner the obj user owner
+     * @param mixed $objUserSender the obj user owner
      *
      * @return self
      */
-    public function setObjUserOwner($objUserOwner)
+    public function setobjUserSender($objUserSender)
     {
-        $this->objUserOwner = $objUserOwner;
+        $this->objUserSender = $objUserSender;
 
         return $this;
     }

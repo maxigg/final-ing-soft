@@ -4,6 +4,258 @@
 		"selected_items":
 		[
 			[
+				"ob",
+				"objFriend"
+			],
+			[
+				"str",
+				"strRelativeURL"
+			],
+			[
+				"path",
+				"path_photo"
+			],
+			[
+				"tmp",
+				"tmp_name"
+			],
+			[
+				"file",
+				"file_ext"
+			],
+			[
+				"pho",
+				"photoUploaded"
+			],
+			[
+				"setSt",
+				"setStrPathPhoto"
+			],
+			[
+				"photo",
+				"photoDirectory"
+			],
+			[
+				"_",
+				"_FILES"
+			],
+			[
+				"obj",
+				"objUser"
+			],
+			[
+				"APP",
+				"APP_PATH"
+			],
+			[
+				"image_",
+				"image_info"
+			],
+			[
+				"getf",
+				"getFriendsId"
+			],
+			[
+				"objF",
+				"objFriendDao"
+			],
+			[
+				"A",
+				"Accepts"
+			],
+			[
+				"use",
+				"user"
+			],
+			[
+				"getSt",
+				"getStrUser"
+			],
+			[
+				"arra",
+				"arrayIds"
+			],
+			[
+				"array",
+				"arrayFriends"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"fri",
+				"friends"
+			],
+			[
+				"Use",
+				"UserModel"
+			],
+			[
+				"USER",
+				"setUserModel"
+			],
+			[
+				"obju",
+				"objUserDao"
+			],
+			[
+				"getfr",
+				"getFriendsRequest"
+			],
+			[
+				"th",
+				"throw	Throw Exception"
+			],
+			[
+				"Prin",
+				"print_r"
+			],
+			[
+				"array_",
+				"array_pop"
+			],
+			[
+				"error_l",
+				"error_log"
+			],
+			[
+				"error",
+				"error_log"
+			],
+			[
+				"__",
+				"__METHOD__"
+			],
+			[
+				"is_s",
+				"is_string"
+			],
+			[
+				"strname",
+				"strNameMethod"
+			],
+			[
+				"User",
+				"UserController"
+			],
+			[
+				"Frien",
+				"FriendController"
+			],
+			[
+				"Login",
+				"LoginController"
+			],
+			[
+				"eroro",
+				"error_log"
+			],
+			[
+				"erro",
+				"error_log"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"SEs",
+				"getSessionVariable"
+			],
+			[
+				"t",
+				"tr	Tag"
+			],
+			[
+				"ang",
+				"angularAgenda"
+			],
+			[
+				"h",
+				"H1	Tag"
+			],
+			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"getse",
+				"getSessionVariable"
+			],
+			[
+				"Se",
+				"Session"
+			],
+			[
+				"isIn",
+				"is_integer"
+			],
+			[
+				"Obj",
+				"objUser"
+			],
+			[
+				"gets",
+				"getSessionVariable"
+			],
+			[
+				"re",
+				"requests"
+			],
+			[
+				"S",
+				"Session"
+			],
+			[
+				"se",
+				"ser"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"sear",
+				"searchResults"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"getstr",
+				"getStrUser"
+			],
+			[
+				"getStr",
+				"getStrName"
+			],
+			[
+				"get",
+				"getStrUser"
+			],
+			[
+				"print_",
+				"print_r"
+			],
+			[
+				"setstr",
+				"setStrNotifications"
+			],
+			[
 				"fr",
 				"friendRequestList"
 			],
@@ -22,14 +274,6 @@
 			[
 				"getFr",
 				"getFriendsRequestId"
-			],
-			[
-				"ob",
-				"objUserDao"
-			],
-			[
-				"ar",
-				"arrayFlagsId"
 			],
 			[
 				"friend",
@@ -52,10 +296,6 @@
 				"foreach	foreach …"
 			],
 			[
-				"req",
-				"request"
-			],
-			[
 				"arrayFriends",
 				"arrayFriendsRequestId"
 			],
@@ -64,24 +304,8 @@
 				"user"
 			],
 			[
-				"arr",
-				"arrayFriendsId"
-			],
-			[
 				"bo",
 				"booleanFlag"
-			],
-			[
-				"str",
-				"strControllerExtern"
-			],
-			[
-				"obj",
-				"objFriendDao"
-			],
-			[
-				"th",
-				"this"
 			],
 			[
 				"fun",
@@ -120,20 +344,12 @@
 				"fun	function …"
 			],
 			[
-				"path",
-				"pathPhoto"
-			],
-			[
 				"inc",
 				"include"
 			],
 			[
 				"passw",
 				"password"
-			],
-			[
-				"use",
-				"User"
 			],
 			[
 				"var",
@@ -186,14 +402,6 @@
 			[
 				"sea",
 				"searchResults"
-			],
-			[
-				"_",
-				"_POST"
-			],
-			[
-				"re",
-				"relative"
 			],
 			[
 				"wid",
@@ -306,224 +514,48 @@
 			[
 				"a",
 				"admin"
-			],
-			[
-				"n",
-				"normalBids"
-			],
-			[
-				"fuc",
-				"function"
-			],
-			[
-				"im",
-				"img1Path"
-			],
-			[
-				"aux",
-				"aux2"
-			],
-			[
-				"Ex",
-				"exit"
-			],
-			[
-				"form",
-				"formData"
-			],
-			[
-				"PR",
-				"product"
-			],
-			[
-				"prod",
-				"product"
-			],
-			[
-				"cate",
-				"category"
-			],
-			[
-				"ex",
-				"exit"
-			],
-			[
-				"co",
-				"codes"
-			],
-			[
-				"c",
-				"code"
-			],
-			[
-				"functi",
-				"create_function"
-			],
-			[
-				"ST",
-				"startDateTime"
-			],
-			[
-				"e",
-				"endDateTime"
-			],
-			[
-				"st",
-				"startDateTime"
-			],
-			[
-				"da",
-				"date"
-			],
-			[
-				"ti",
-				"setStartDateTime"
-			],
-			[
-				"img2",
-				"img2Temp"
-			],
-			[
-				"imgT",
-				"img2Temp"
-			],
-			[
-				"img1",
-				"img1Temp"
-			],
-			[
-				"img",
-				"img1Temp"
-			],
-			[
-				"arra",
-				"array"
-			],
-			[
-				"fil",
-				"file1"
-			],
-			[
-				"fi",
-				"file1"
-			],
-			[
-				"R",
-				"renderdata"
-			],
-			[
-				"VA",
-				"var_dump"
-			],
-			[
-				"CAT",
-				"catch"
-			],
-			[
-				"RE",
-				"result"
-			],
-			[
-				"va",
-				"var_dump"
-			],
-			[
-				"el",
-				"else"
-			],
-			[
-				"cat",
-				"category"
-			],
-			[
-				"product",
-				"products"
-			],
-			[
-				"B",
-				"ProductBundle"
-			],
-			[
-				"array",
-				"array"
-			],
-			[
-				"Pr",
-				"ProductsCategories"
-			],
-			[
-				"FC",
-				"FCProductBundle"
-			],
-			[
-				"em",
-				"getEntityManager"
-			],
-			[
-				"pat",
-				"pathCategoryAction"
-			],
-			[
-				"fa",
-				"false"
-			],
-			[
-				"ad",
-				"add"
-			],
-			[
-				"S",
-				"Stof"
-			],
-			[
-				"de",
-				"descripcion"
-			],
-			[
-				"A",
-				"ArticleType"
-			],
-			[
-				"tim",
-				"timezone_open"
-			],
-			[
-				"pu",
-				"public"
-			],
-			[
-				"q",
-				"query"
-			],
-			[
-				"has",
-				"hash"
-			],
-			[
-				"loa",
-				"loader"
-			],
-			[
-				"t",
-				"text-align"
-			],
-			[
-				"padding-",
-				"padding-top"
-			],
-			[
-				"100",
-				"100px"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "APP/CONFIG/config.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 1064,
+				"buffer_size": 708,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/Index/index.php",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/User/index.php",
+			"settings":
+			{
+				"buffer_size": 344,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/Login/formLogin.php",
+			"settings":
+			{
+				"buffer_size": 790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "APP/VIEWS/Login/formRegister.php",
+			"settings":
+			{
+				"buffer_size": 2242,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,87 +563,15 @@
 			"file": "APP/CONTROLLERS/UserController.php",
 			"settings":
 			{
-				"buffer_size": 4887,
+				"buffer_size": 7429,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "APP/VIEWS/Friend/index.php",
+			"file": "FRAMEWORK/Bootstrap.php",
 			"settings":
 			{
-				"buffer_size": 224,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/RESOURCES/php/navbar.php",
-			"settings":
-			{
-				"buffer_size": 1322,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/CONTROLLERS/LoginController.php",
-			"settings":
-			{
-				"buffer_size": 1552,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/DAOS/UserDAO.php",
-			"settings":
-			{
-				"buffer_size": 10751,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/VIEWS/User/usersList.php",
-			"settings":
-			{
-				"buffer_size": 1247,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/CONTROLLERS/FriendController.php",
-			"settings":
-			{
-				"buffer_size": 1361,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/DAOS/FriendDAO.php",
-			"settings":
-			{
-				"buffer_size": 1905,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/VIEWS/Friend/requestList.php",
-			"settings":
-			{
-				"buffer_size": 1234,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/CONTROLLERS/IndexController.php",
-			"settings":
-			{
-				"buffer_size": 324,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "APP/MODELS/RequestModel.php",
-			"settings":
-			{
-				"buffer_size": 1819,
+				"buffer_size": 1846,
 				"line_ending": "Windows"
 			}
 		}
@@ -751,7 +711,7 @@
 				"HTML: Wrap Selection With Tag"
 			]
 		],
-		"width": 383.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -768,6 +728,100 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Friend/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/usersList.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Friend/requestList.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/RESOURCES/css/style.css",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/PUBLIC/css/bootstrap.css",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/PUBLIC/css/bootstrap-responsive.css",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/PUBLIC/css/googleFonts.css",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/LoginController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/DAOS/UserDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Index/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/Controller.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/Bootstrap.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/UserController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/Request.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/DAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/DAOS/AdminDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/DAOS/DenounceDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/DAOS/FriendDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/DAOS/PublicationDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/View.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/profile.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/IndexController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/MailController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/FriendController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/RESOURCES/php/navbar.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/menu.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/Session.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/formLogin.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/formRegister.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/FRAMEWORK/Includes.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/MODELS/RequestModel.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/MODELS/UserModel.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/RESOURCES/php/SimpleImage.php",
+		"/C/Users/usuario/Facultad/3_AÑO/_Informatica_2/wamp/www/2011/final/createCategory.php",
+		"/C/wamp/www/2011/final/register.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONFIG/config.php",
+		"/C/wamp/www/2011/final/functions.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/PUBLIC/php/simpleImage.php",
+		"/C/wamp/www/2009/Trabajo2/Ejercicio1_Pagina1.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/RESOURCES/php/footer.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/MODELS/AlbumModel.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/umbook.sublime-workspace",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/emptySearch.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/WallController.php",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/aa.js",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/Agenda2/agenda.js",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/claseAngular1.html",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/claseAngular2.html",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/clase3.html",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/agenda - completar.html",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/clase2.html",
+		"/C/Users/usuario/Documents/JAVASCRIPT ANGULARJS NODEJS/agenda.js",
+		"/C/Users/usuario/Documents/claseAngular2.html",
+		"/C/Users/usuario/Documents/claseAngular1.html",
+		"/C/Users/usuario/Documents/clase3.html",
+		"/C/Users/usuario/Documents/clase2.html",
+		"/C/Users/usuario/Documents/agenda - completar.html",
+		"/C/Users/usuario/Documents/agenda.js",
+		"/C/Users/usuario/Documents/agenda - completar.js",
+		"/C/Users/usuario/Documents/claseAngular.html",
+		"/C/Users/usuario/Downloads/angular-1.3.0-beta.8/angular-1.3.0-beta.8/angular.js",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/User/password.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Login/errorLogin.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/MODELS/PublicationModel.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/MODELS/PictureModel.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Wall/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/APP/VIEWS/Friend/emptySearch.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/MailController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/UserController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/LoginController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/WallController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/FriendController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/controllers/IndexController.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/Controller.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/View.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/config/config.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/Session.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/DAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/Includes.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/DAOS/FriendDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/Bootstrap.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/Request.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/DAOS/UserDAO.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/404.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/VIEWS/Login/errorLogin.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/config/config_model.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/VIEWS/Wall/index.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/VIEWS/Login/formLogin.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/VIEWS/User/menu.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/app/VIEWS/User/usersList.php",
+		"/C/wamp/www/final-ing-soft/Implementacion/umbook/framework/includes.php",
 		"/C/wamp/www/umbook/APP/VIEWS/User/formRegister.php",
 		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DB/umbook.sql",
 		"/C/wamp/www/umbook/FRAMEWORK/View.php",
@@ -801,101 +855,7 @@
 		"/C/wamp/www/umbook/APP/CONFIG/config.php",
 		"/C/wamp/www/umbook/APP/VIEWS/Login/formLogin.php",
 		"/C/wamp/www/umbook/APP/CONTROLLERS/UserController.php",
-		"/C/wamp/www/umbook/FRAMEWORK/Controller.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGrupo.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaInicio.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGuardarGrupo.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListarDenuncias.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaListaBusqueda.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaPublicacion.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaVerNotificaciones.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaNotificacion.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarGrupo.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaEditarAlbum.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaGestionarSolicitudAmistad.html",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Requerimientos/Interfaces/PantallaBuscar.html",
-		"/C/wamp/www/final/Registrar.php",
-		"/C/wamp/www/minutoaminuto/dao/usuarioDao.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Request.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONFIG/config_model.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Bootstrap.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/MODELS/UserModel.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/Controller.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/index.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/UserController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/DAOS/UserDAO.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/LoginController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/FRAMEWORK/View.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/CONTROLLERS/IndexController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/APP/VIEWS/Index/index.php",
-		"/C/wamp/www/umbook/app/controllers/IndexController.php",
-		"/C/wamp/www/umbook/app/helpers/daos/UsuarioDAO.php",
-		"/C/wamp/www/umbook/app/controllers/LoginController.php",
-		"/C/wamp/www/umbook/framework/View.php",
-		"/C/wamp/www/umbook/app/views/login/formularioLogin.php",
-		"/C/wamp/www/umbook/app/views/login/errorLogin.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/config/config.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/header.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/Index/index.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/HolaMundo/holaMundo.php",
-		"/C/wamp/www/MVC_LIMPIO1/app/controllers/HolaMundoController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/models/UsuarioModel.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/helpers/daos/UsuarioDAO.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/LoginController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/IndexController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/web.config",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/footer.php",
-		"/C/wamp/www/minutoaminuto/views/layout/cibeles/footer.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/css/estilo.css",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/img/loading.gif",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/views/layout/default/js/general.js",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/framework/DAO.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/helpers/daos/usuarioDao.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/EstructuraController.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/CargaController.php",
-		"/C/wamp/www/MVC_LIMPIO1/app/config/config.php",
-		"/C/wamp/www/MVC_LIMPIO1/app/controllers/EstructuraController.php",
-		"/C/wamp/www/MVC_LIMPIO1/app/BD/estructura.sql",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/config/config_model.php",
-		"/C/wamp/www/MVC_LIMPIO1/app/config/config_model.php",
-		"/C/Users/Administrador/Documents/facu/4/ingenieria de software/final-ing-soft/Implementacion/umbook/app/controllers/UsuarioController.php",
-		"/C/wamp/www/minutoaminuto/controllers/loginController.php",
-		"/C/wamp/www/minutoaminuto/models/usuarioModel.php",
-		"/C/wamp/www/minutoaminuto/controllers/usuarioController.php",
-		"/C/wamp/www/DragAndDrop/index.php",
-		"/D/aplicaciones android/razr d3/Archivos sistema original/vold.fstab",
-		"/D/aplicaciones android/razr d3/Archivos sistema original/vold.fstab.nand",
-		"/C/Users/Administrador/Downloads/SD por Interna/SD por Interna/vold.fstab",
-		"/C/Users/Administrador/Downloads/SD por Interna/SD por Interna/vold.fstab.nand",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/navbar.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/deportesController.php",
-		"/C/Users/Administrador/Dropbox/trabajo/minutoaminuto/views/layout/cibeles/navbar.php",
-		"/C/wamp/www/minutoaminuto/controllers/deportesController.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioModel.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioDao.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/usuarioController.php",
-		"/C/wamp/www/minutoaminuto/models/comentarioModel.php",
-		"/C/wamp/www/minutoaminuto/views/alineacion/buscar.phtml",
-		"/C/wamp/www/minutoaminuto/views/layout/cibeles/navbar.php",
-		"/C/wamp/www/minutoaminuto/views/login/errorLogin.phtml",
-		"/C/wamp/www/minutoaminuto/controllers/alineacionController.php",
-		"/C/wamp/www/minutoaminuto/controllers/comentariosController.php",
-		"/C/wamp/www/minutoaminuto/controllers/equiposController.php",
-		"/C/wamp/www/minutoaminuto/controllers/eventosController.php",
-		"/C/wamp/www/minutoaminuto/controllers/participantesController.php",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/formularioLogin.phtml",
-		"/C/Users/Administrador/AppData/Local/Temp/fz3temp-1/loginController.php",
-		"/C/wamp/www/minutoaminuto/views/eventos/Editar.phtml",
-		"/C/wamp/www/minutoaminuto/views/eventos/EditarMarcador.phtml",
-		"/C/wamp/www/minutoaminuto/views/eventos/formularioEvento.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/buscar.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/buscarEditar.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/buscarEliminar.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/Editar.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/formularioImagenParticipante.phtml",
-		"/C/wamp/www/minutoaminuto/views/participantes/formularioParticipante.phtml",
-		"/C/wamp/www/minutoaminuto/views/usuario/clave.phtml"
+		"/C/wamp/www/umbook/FRAMEWORK/Controller.php"
 	],
 	"find":
 	{
@@ -903,9 +863,28 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 102.0,
 		"where_history":
 		[
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\APP\\RESOURCES\\img",
+			"<open folders>,-*.css,-*.js,,C:\\wamp",
+			"<open folders>,-*.css,-*.js,C:\\",
+			"<open folders>,-*.css,-*.js",
+			"<open folders>,-*.css",
+			"<open folders>",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\APP",
+			"C:\\Users\\usuario\\Facultad\\4_AÑO\\Ingenieria_de_Software\\Practicas - UM Book\\final-ing-soft\\Implementacion\\umbook\\app",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\",
+			"<open folders>",
+			"",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\APP",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\FRAMEWORK",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\app",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook\\app\\VIEWS",
+			"C:\\wamp\\www\\final-ing-soft\\Implementacion\\umbook",
 			"C:\\Users\\Administrador\\Documents\\facu\\4\\ingenieria de software\\final-ing-soft\\Implementacion\\umbook"
 		]
 	},
@@ -914,6 +893,122 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
+			"img-",
+			"img",
+			".img-round",
+			"img-round",
+			"get",
+			"getStrName",
+			"img-",
+			"img",
+			"img-",
+			"img",
+			"strTitle",
+			"new",
+			"objFriendDao",
+			"pictureUploader",
+			"registerStrMessage",
+			"table",
+			"img",
+			"IMAGETYPE_JPEG",
+			"imagecreatefromjpeg",
+			");	",
+			"$rRequests",
+			"$receivedRequests",
+			"value",
+			"removeRequest",
+			"();\n",
+			");\n",
+			"arrayObjFriends",
+			"UserModel",
+			"getFriends",
+			"getFriendsRequest",
+			"getfriends",
+			"getFriendsId",
+			"getfriends",
+			"getfrie",
+			"setUserModel",
+			"ArrayObjPicturePictures",
+			"arrayObjPicturePictures",
+			"IN ",
+			"IN",
+			"getRequests",
+			"get",
+			"objUserOwner",
+			"left",
+			"print_r",
+			"intr",
+			"setArray",
+			"setArrayIntRequests",
+			"seta",
+			"setArrayIntRequests",
+			"asd",
+			"index",
+			"asd",
+			"boolEjecutarModificacionSQL",
+			"getuse",
+			"index",
+			"IndexController",
+			"TD",
+			"htaccess",
+			"fetchAll",
+			"objUserDao",
+			"exec(",
+			"exec",
+			"getU",
+			"menu.php",
+			"Controller not found",
+			"){\n",
+			"__construct",
+			"AND",
+			"strlen",
+			"password2",
+			"objLoadModel",
+			"errorLogin",
+			"valueObject",
+			"create",
+			"objLoadModel",
+			"\"-----------\";\n",
+			"logout",
+			"last",
+			"index",
+			"getIntI",
+			"requests",
+			"requestes",
+			"this",
+			"getstr",
+			"getstru",
+			"getstr",
+			"strNotifications",
+			"lastInsertId",
+			"__set",
+			"__get",
+			"__call",
+			"strPassword",
+			"setstrno",
+			"getstrno",
+			"arrayObjFriends",
+			"arrayobjUserFriends",
+			"ArrayObjPublications",
+			"arrayobjPublicationPublications",
+			"arrayObjGroups",
+			"arrayobjGroupGroups",
+			"arrayobjAlbumAlbums",
+			"INPUT_GET",
+			"filter_input",
+			"DEFAULT_METHOD",
+			">>>>>>>>",
+			"INPUT_GET",
+			"hero",
+			"hero-",
+			"hero",
+			"wrongData",
+			"table",
+			"			\n",
+			"Cambiar Clave",
+			"Request",
+			"}\n",
 			"friendRequest",
 			"user",
 			"$temp",
@@ -925,123 +1020,7 @@
 			"$objUser",
 			"$arrayErrors",
 			"$objUser",
-			"name",
-			"strLastName",
-			"strEmail",
-			"strBirthday",
-			"strPassword",
-			"strUser",
-			"user",
-			"BASE_URL . 'APP' . DS . 'RESOURCES' . DS",
-			"JS",
-			"class=\"button2\"",
-			"BASE_URL",
-			"user",
-			"mensaje",
-			"$objUserDao",
-			"->message",
-			"->Title",
-			"->pass",
-			"_view",
-			"->_User",
-			"$this->_User = new UserModel();",
-			"get",
-			"$this->_UserDao",
-			"getStrPassword()",
-			"getStrUser()",
-			"pass",
-			"getStrPassword()",
-			"->user",
-			"$User",
-			"user",
-			"User",
-			"errores",
-			"Errores",
-			"errores",
-			"strUser",
-			"set",
-			"esCadena",
-			"cadena",
-			"entero",
-			"loadModel",
-			"eliminar",
-			"editar",
-			"Grupo1 - 10 fotos",
-			"nuevo",
-			"eliminar1",
-			"Grupo",
-			"Eliminar",
-			"Album1",
-			"Agregar",
-			"1",
-			"Album",
-			"Foto",
-			"Agregar Foto",
-			"Guardar",
-			"Album",
-			"Agregar Foto",
-			"eliminar3",
-			"Album",
-			" <ul>\n                    <li>",
-			"    	<ul>\n",
-			"    	<ul>\n    	    <li>",
-			"busqueda",
-			"1",
-			"</button> ",
-			"</button>",
-			"</button> ",
-			"nombre",
-			"password",
-			"password<",
-			"password",
-			"nuevo",
-			"<li></li>",
-			"></",
-			"Album1 - 10 fotos",
-			"rechazar",
-			"usuario",
-			"input",
-			"Login",
-			"password",
-			"usuario",
-			"getId()",
-			"getUser()",
-			"getPass()",
-			" pass",
-			"SET pass",
-			"Pass",
-			"pass",
-			"Pass",
-			"pass",
-			"save",
-			"UPDATE User",
-			"FROM  `User`",
-			"`User`",
-			"FROM User",
-			"User",
-			"mensaje",
-			"album",
-			"Usuario",
-			"renderizar",
-			"armaPathParaCargarView",
-			"redireccionar",
-			"URLRelative",
-			"Vista",
-			"Titulo",
-			"Modelo",
-			"Nombre",
-			"DEFAULT_METOD",
-			"Metodo",
-			"Argumentos",
-			"Controlador",
-			"DEFAULT_METODO",
-			"app/views/layout/",
-			"validarDatos",
-			"renderizar",
-			"BASE_URL",
-			"$result = $this->databaseUpdate($sql);",
-			"databaseQuery($sql)",
-			"return false"
+			"name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1049,6 +1028,17 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$this->rRequests",
+			"$rRequests",
+			"item",
+			"arrayObjPictures",
+			"objUserSender",
+			"td",
+			"ArrayObjFriends",
+			"ArrayObjPublications",
+			"ArrayObjGroups",
+			"ArrayObjAlbums",
+			"arrayObjAlbums",
 			"User",
 			"renderView",
 			"redirect",
@@ -1063,7 +1053,7 @@
 			"DEFAULT_METOD",
 			""
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -1077,18 +1067,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "APP/CONFIG/config.php",
+					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 1064,
+						"buffer_size": 708,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								1064
+								404,
+								404
 							]
 						],
 						"settings":
@@ -1103,45 +1093,44 @@
 				},
 				{
 					"buffer": 1,
-					"file": "APP/CONTROLLERS/UserController.php",
+					"file": "APP/VIEWS/Index/index.php",
 					"settings":
 					{
-						"buffer_size": 4887,
+						"buffer_size": 150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3768,
-								3768
+								23,
+								23
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1554.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "APP/VIEWS/Friend/index.php",
+					"file": "APP/VIEWS/User/index.php",
 					"settings":
 					{
-						"buffer_size": 224,
+						"buffer_size": 344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								107,
+								103
 							]
 						],
 						"settings":
@@ -1156,24 +1145,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "APP/RESOURCES/php/navbar.php",
+					"file": "APP/VIEWS/Login/formLogin.php",
 					"settings":
 					{
-						"buffer_size": 1322,
+						"buffer_size": 790,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								790,
+								790
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1183,206 +1171,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "APP/CONTROLLERS/LoginController.php",
+					"file": "APP/VIEWS/Login/formRegister.php",
 					"settings":
 					{
-						"buffer_size": 1552,
+						"buffer_size": 2242,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								954,
-								944
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "APP/DAOS/UserDAO.php",
-					"settings":
-					{
-						"buffer_size": 10751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1323,
-								1644
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 462.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "APP/VIEWS/User/usersList.php",
-					"settings":
-					{
-						"buffer_size": 1247,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								767,
-								767
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "APP/CONTROLLERS/FriendController.php",
-					"settings":
-					{
-						"buffer_size": 1361,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								707,
-								707
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "APP/DAOS/FriendDAO.php",
-					"settings":
-					{
-						"buffer_size": 1905,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1233,
-								1233
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "APP/VIEWS/Friend/requestList.php",
-					"settings":
-					{
-						"buffer_size": 1234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								288,
-								252
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "APP/CONTROLLERS/IndexController.php",
-					"settings":
-					{
-						"buffer_size": 324,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								318,
-								318
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "APP/MODELS/RequestModel.php",
-					"settings":
-					{
-						"buffer_size": 1819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								865,
-								857
+								53,
+								53
 							]
 						],
 						"settings":
@@ -1392,7 +1192,62 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "APP/CONTROLLERS/UserController.php",
+					"settings":
+					{
+						"buffer_size": 7429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1209,
+								1209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 968.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "FRAMEWORK/Bootstrap.php",
+					"settings":
+					{
+						"buffer_size": 1846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1749,
+								1759
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 440.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1433,7 +1288,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1443,7 +1298,7 @@
 		[
 			[
 				"",
-				"/C/Users/Administrador/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+				"app/DAOS/UserDAO.php"
 			],
 			[
 				"par",

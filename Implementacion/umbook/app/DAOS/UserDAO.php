@@ -1,80 +1,7 @@
 <?php
 
 class UserDAO extends DAO {
-
-	/**
-	 * createValueObject-method. This method is used when the Dao class needs
-	 * to create new value object instance. The reason why this method exists
-	 * is that sometimes the programmer may want to extend also the valueObject
-	 * and then this method can be overrided to return extended valueObject.
-	 * NOTE: If you extend the valueObject class, make sure to override the
-	 * clone() method in it!
-	 */
-
-	function load($id) {
-
-		$sql = "SELECT id, user, password, email, path_photo, notifications FROM user WHERE (id = ".$id.") ";
-		$result = $this->arrayEjecutarConsultaSQL($sql);
-
-		foreach($result as $row) {
-			$temp = new UserModel();
-			$temp->setIntId($id);
-			$temp->setStrUser($row[1]);
-			$temp->setStrPassword($row[2]);
-			$temp->setStrEmail($row[3]);
-			$temp->setStrPathPhoto($row[4]);
-			$temp->setStrNotifications($row[5]);
-		}
-		return $temp;
-	}
-
-
-	function loadAll() {
-
-
-		$sql = "SELECT * FROM user ORDER BY id ASC ";
-
-		$searchResults = $this->listQuery($sql);
-
-		return $searchResults;
-	}
-
-
-	function getUsers($query){
-		$sql = "SELECT id, user, name, last_name, path_photo FROM  `user`
-				WHERE
-				`user` LIKE '%".$query."%' OR `name` LIKE '%".$query."%' OR `last_name` LIKE '%".$query."%' AND role=0";
-
-		$result = $this->arrayEjecutarConsultaSQL($sql);
-		$searchResults = array();
-		foreach($result as $row) {		 
-			$temp = new UserModel();		 
-			$temp->setintId($row[0]);
-			$temp->setStrUser($row[1]);
-			$temp->setStrName($row[2]);
-			$temp->setStrLastName($row[3]);
-			$temp->setStrPathPhoto($row[4]);			 
-			array_push($searchResults, $temp);
-		}
-		return $searchResults;
-	}
-
-	 
-	function checkLogin($User) {
-
-		$sql = "SELECT id FROM user where user = '".$User->strUser."' and password='".$User->strPassword."'";
-		$result = $this->arrayEjecutarConsultaSQL($sql);
-		$searchResults=0;
-		foreach ($result as $row){
-			if($row[0] != null){
-				$searchResults = $row[0];
-			}else{
-				return false;
-			}
-		}
-		return $searchResults;		
-	}
-
+	
 	/**
 	 * create-method. This will create new row in database according to supplied
 	 * valueObject contents. Make sure that values for all NOT NULL columns are
@@ -83,24 +10,144 @@ class UserDAO extends DAO {
 	 * read the generated primary-key back to valueObject if automatic surrogate-keys
 	 * were used.
 	 *
-	 * @param conn         This method requires working database connection.
-	 * @param valueObject  This parameter contains the class instance to be created.
-	 *                     If automatic surrogate-keys are not used the Primary-key
-	 *                     field must be set for this to work properly.
+	 * @param object UserModel         This method requires working database connection.
+	 * @param boolean
 	 */
-	function create(&$valueObject) {
+	public function create(&$objUser) {
 
-		$sql = "INSERT INTO user (name, last_name, email, user, password, birthday) VALUES ( ";
-		$sql = $sql."'".$valueObject->getStrName()."', ";
-		$sql = $sql."'".$valueObject->getStrLastName()."', ";
-		$sql = $sql."'".$valueObject->getStrEmail()."', ";
-		$sql = $sql."'".$valueObject->getStrUser()."', ";
-		$sql = $sql."'".$valueObject->getStrPassword()."', ";
-		$sql = $sql."'".$valueObject->getStrBirthday()."') ";
+		$sql = "INSERT INTO user (name, last_name, email, user, password, path_photo, birthday) VALUES ( ";
+		$sql = $sql."'".$objUser->getStrName()."', ";
+		$sql = $sql."'".$objUser->getStrLastName()."', ";
+		$sql = $sql."'".$objUser->getStrEmail()."', ";
+		$sql = $sql."'".$objUser->getStrUser()."', ";
+		$sql = $sql."'".$objUser->getStrPassword()."', ";
+		$sql = $sql."'http://localhost/final-ing-soft/Implementacion/umbook/APP/RESOURCES/img/nophoto.jpg', ";
+		$sql = $sql."'".$objUser->getStrBirthday()."') ";
 
 		$result = $this->boolEjecutarModificacionSQL($sql);
-
+		//print_r($result);die();
 		return $result;
+	}
+
+	/**
+	 * Checks if user and password are correct
+	 *
+	 * @param object UserModel
+	 * @return object UserModel
+	 */
+	public function checkLogin(&$user) {
+
+		$sql = "SELECT id, name, last_name, user, password, email, path_photo, birthday, role, notifications, state
+		FROM user WHERE user = '".$user->strUser."' AND password='".$user->strPassword."' AND state<>0";
+		
+		if( !$result = $this->arrayEjecutarConsultaSQL($sql) )
+			return false;
+
+		foreach ($result as $row ) {
+			//print_r($row);
+			$user->setIntId($row[0]);
+			$user->setStrName($row[1]);
+			$user->setStrLastName($row[2]);
+			$user->setStrUser($row[3]);
+			$user->setStrPassword($row[4]);
+			$user->setStrEmail($row[5]);
+			$user->setStrPathPhoto($row[6]);
+			$user->setStrBirthday($row[7]);
+			$user->setIntRole($row[8]);
+			$user->setStrNotifications($row[9]);
+			$user->setBooleanState($row[10]);
+		}
+		return $user;
+	}
+
+	/**
+	 * Checks the email is already used
+	 *
+	 * @param object UserModel
+	 * @return boolean
+	 */
+	public function checkEmail(&$objUser) {
+		
+		$sql = "SELECT `user` FROM user WHERE user = '".$objUser->getStrEmail();
+		
+		if( !$result = $this->boolEjecutarModificacionSQL($sql) )
+			return false;
+
+		return true;
+	}
+
+	/**
+     * Find groups of an user
+     *
+     * @param object $objUser 
+     *
+     * @return object $objUser
+     */
+	public function getGroups(&$objUser){
+		echo __FILE__.__METHOD__." --> NOT IMPLEMENTED";die();
+		
+		$groups = array();
+		return false;
+	}
+
+    /**
+     * Find users that match the $query pattern
+     *
+     * @param mixed $query the finding patern
+     *
+     * @return array obj UserModel
+     */
+	public function getUsers($search){
+		$id = Session::getSessionVariable('objUser')->getIntId();
+		
+		$sql = "SELECT id, user, name, last_name, path_photo FROM user
+				WHERE role=0 AND state<>0 AND id<>".$id." AND (user LIKE '%".$search."%' OR name LIKE '%".$search."%' OR last_name LIKE '%".$search."%')";		
+		//echo $sql;die();
+
+		$result = $this->arrayEjecutarConsultaSQL($sql);
+		
+		if(0 == count($result))
+			return false;
+		
+		$arrayUsers = array();
+		foreach($result as $row) {
+			$temp = new UserModel();
+			$temp->setintId($row[0]);
+			$temp->setStrUser($row[1]);
+			$temp->setStrName($row[2]);
+			$temp->setStrLastName($row[3]);
+			$temp->setStrPathPhoto($row[4]);
+			array_push($arrayUsers, $temp);
+		}
+		return $arrayUsers;
+	}
+
+	/**
+     * Pull friends
+     *
+     * @param array int
+     * @return array object UserModel
+     */
+	function getUsersById(&$arrayIds){
+		if(0 == count($arrayIds))
+			return false;
+		elseif(1 == count($arrayIds))
+			$usersIds = array_shift($arrayIds);
+		else
+			$usersIds = implode(',', $arrayIds);
+
+		$sql = "SELECT id, user, name, last_name, path_photo FROM user WHERE user.id IN(".$usersIds.")";
+		//print_r($sql);die();
+		$result = $this->arrayEjecutarConsultaSQL($sql);
+		//print_r($result);
+		if(0 != count($result)){
+			$friends = array();
+			foreach($result as $item)
+				array_push($friends, $item);
+			//print_r($result);
+			return $friends;
+		}
+		return false;
 	}
 
 	public function createPathPhoto($pathPhoto){
@@ -109,10 +156,8 @@ class UserDAO extends DAO {
 		$sql = $sql."'".$pathPhoto."') ";
 
 		$result = $this->boolEjecutarModificacionSQL($sql);
-
 		return $result;
 	}
-
 
 	/**
 	 * save-method. This method will save the current state of valueObject to database.
@@ -125,116 +170,27 @@ class UserDAO extends DAO {
 	 * @param valueObject  This parameter contains the class instance to be saved.
 	 *                     Primary-key field must be set for this to work properly.
 	 */
-	function update(&$valueObject) {
+	function updateProfile(&$objUser) {
 
-		$sql = "UPDATE user SET user = '".$valueObject->getStrUser()."', ";
-		$sql = $sql."email = '".$valueObject->getStrEmail()."',";
-		$sql = $sql."password = '".$valueObject->getStrPassword()."'";
-		$sql = $sql." WHERE (id = ".$valueObject->getIntId().") ";
-		$result = $this->boolEjecutarModificacionSQL($sql);
-
-		if ($result != 1) {
-			return false;
-		}
-
-		return $result;
-	}
-
-	function updateProfile(&$valueObject) {
-
-		$sql = "UPDATE user SET user = '".$valueObject->getStrUser()."' ";
-		$sql = $sql." WHERE (id = ".Session::get('id').") ";
-		 
-		$result = $this->boolEjecutarModificacionSQL($sql);
-		 
-		if ($result != 1) {
-			return false;
-		}
-		return $result;
-	}
-
-
-	function updatePassword(&$valueObject) {
-
-		$sql = "UPDATE user SET password = '".$valueObject->getStrPassword()."'  WHERE (id = ".Session::get('id').")";
-		$result = $this->boolEjecutarModificacionSQL($sql);
-
-		if ($result != 1) {
-			return false;
-		}
-		return $result;
-	}
-
-	/**
-	 * delete-method. This method will remove the information from database as identified by
-	 * by primary-key in supplied valueObject. Once valueObject has been deleted it can not
-	 * be restored by calling save. Restoring can only be done using create method but if
-	 * database is using automatic surrogate-keys, the resulting object will have different
-	 * primary-key than what it was in the deleted object. If delete can not find matching row,
-	 * NotFoundException will be thrown.
-	 *
-	 * @param conn         This method requires working database connection.
-	 * @param valueObject  This parameter contains the class instance to be deleted.
-	 *                     Primary-key field must be set for this to work properly.
-	 */
-	function disableById(&$valueObject) {
-
-		if (!$valueObject->getStrId()) {
-			return false;
-		}
-
-		$sql = "UPDATE user SET state=0 WHERE id=".$valueObject->getStrId()."";
-		$result = $this->boolEjecutarModificacionSQL($sql);
-
-		if ($result != 1) {
-			return false;
-		}
-		return $result;
-	}
-
-	/**
-	 * deleteAll-method. This method will remove all information from the table that matches
-	 * this Dao and ValueObject couple. This should be the most efficient way to clear table.
-	 * Once deleteAll has been called, no valueObject that has been created before can be
-	 * restored by calling save. Restoring can only be done using create method but if database
-	 * is using automatic surrogate-keys, the resulting object will have different primary-key
-	 * than what it was in the deleted object. (Note, the implementation of this method should
-	 * be different with different DB backends.)
-	 *
-	 * @param conn         This method requires working database connection.
-	 */
-	function deleteAll() {
-
-		$sql = "DELETE FROM user";
+		$sql = "UPDATE user SET user = '".$objUser->getStrUser()."', ";
+		$sql = $sql."email = '".$objUser->getStrEmail()."', ";
+		$sql = $sql."notifications = '".$objUser->getStrNotifications()."', ";
+		$sql = $sql."path_photo = '".$objUser->getStrPathPhoto()."' ";
+		$sql = $sql."WHERE (id = ".$objUser->getIntId().") ";
+		//print_r($sql);die();
 		$result = $this->boolEjecutarModificacionSQL($sql);
 
 		return $result;
 	}
 
+	function updatePassword(&$objUser) {
+		
+		$sql = "UPDATE user SET password = '".$objUser->getStrPassword()."'  WHERE (id = ".$objUser->getIntId().")";
+		//print_r($sql);die();
+		$result = $this->boolEjecutarModificacionSQL($sql);
 
-	/**
-	 * coutAll-method. This method will return the number of all rows from table that matches
-	 * this Dao. The implementation will simply execute "select count(primarykey) from table".
-	 * If table is empty, the return value is 0. This method should be used before calling
-	 * loadAll, to make sure table has not too many rows.
-	 *
-	 * @param conn         This method requires working database connection.
-	 */
-	function countAll() {
-
-		$sql = "SELECT count(*) FROM user";
-		$allRows = 0;
-
-		$result = $this->arrayEjecutarConsultaSQL($sql);
-
-		if($result != null){
-			foreach($result as $row) {
-				$allRows = $row[0];
-			}
-		}
-		return $allRows;
+		return $result;
 	}
-
 
 	/**
 	 * searchMatching-Method. This method provides searching capability to
@@ -293,6 +249,8 @@ class UserDAO extends DAO {
 	}
 
 
+
+/*****************HELPERS**********************/
 	/**
 	 * databaseQuery-method. This method is a helper method for internal use. It will execute
 	 * all database queries that will return only one row. The resultset will be converted
@@ -302,7 +260,7 @@ class UserDAO extends DAO {
 	 * @param stmt         This parameter contains the SQL statement to be excuted.
 	 * @param valueObject  Class-instance where resulting data will be stored.
 	 */
-	function singleQuery(&$sql, &$valueObject) {
+	private function singleQuery(&$sql, &$valueObject) {
 
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 
@@ -318,7 +276,6 @@ class UserDAO extends DAO {
 		return true;
 	}
 
-
 	/**
 	 * databaseQuery-method. This method is a helper method for internal use. It will execute
 	 * all database queries that will return multiple rows. The resultset will be converted
@@ -327,7 +284,7 @@ class UserDAO extends DAO {
 	 * @param conn         This method requires working database connection.
 	 * @param stmt         This parameter contains the SQL statement to be excuted.
 	 */
-	function listQuery(&$sql) {
+	private function listQuery(&$sql) {
 
 		$result = $this->arrayEjecutarConsultaSQL($sql);
 		$searchResults = array();
@@ -341,6 +298,99 @@ class UserDAO extends DAO {
 
 		return $searchResults;
 	}
+/*****************HELPERS**********************/
+
+
+/*****************ADMINISTRATOR**********************/
+	/**
+     * List all the users --> Administrator Only
+     *
+     * @param mixed $query the finding patern
+     *
+     * @return array of users
+     */
+	function loadAll() {
+		if( 1 == Session::getSessionVariable('role')){
+			$sql = "SELECT * FROM user ORDER BY id ASC ";
+			$searchResults = $this->listQuery($sql);
+			return $searchResults;
+		}else 
+			return false;
+	}
+
+	/**
+	 * coutAll-method. This method will return the number of all rows from table that matches
+	 * this Dao. The implementation will simply execute "select count(primarykey) from table".
+	 * If table is empty, the return value is 0. This method should be used before calling
+	 * loadAll, to make sure table has not too many rows.
+	 *
+	 * @param conn         This method requires working database connection.
+	 */
+	function countAll() {
+
+		$sql = "SELECT count(*) FROM user";
+		$allRows = 0;
+
+		$result = $this->arrayEjecutarConsultaSQL($sql);
+
+		if($result != null){
+			foreach($result as $row) {
+				$allRows = $row[0];
+			}
+		}
+		return $allRows;
+	}
+
+	/**
+	 * deleteAll-method. This method will remove all information from the table that matches
+	 * this Dao and ValueObject couple. This should be the most efficient way to clear table.
+	 * Once deleteAll has been called, no valueObject that has been created before can be
+	 * restored by calling save. Restoring can only be done using create method but if database
+	 * is using automatic surrogate-keys, the resulting object will have different primary-key
+	 * than what it was in the deleted object. (Note, the implementation of this method should
+	 * be different with different DB backends.)
+	 *
+	 * @param conn         This method requires working database connection.
+	 */
+	function deleteUser($id = 0) {
+
+		$sql = "DELETE * FROM user WHERE id='".$id."'";
+		print_r($sql);die();
+		if($result = $this->boolEjecutarModificacionSQL($sql))
+			return $result;
+
+		return false;
+	}
+
+	/**
+	 * delete-method. This method will remove the information from database as identified by
+	 * by primary-key in supplied valueObject. Once valueObject has been deleted it can not
+	 * be restored by calling save. Restoring can only be done using create method but if
+	 * database is using automatic surrogate-keys, the resulting object will have different
+	 * primary-key than what it was in the deleted object. If delete can not find matching row,
+	 * NotFoundException will be thrown.
+	 *
+	 * @param conn         This method requires working database connection.
+	 * @param valueObject  This parameter contains the class instance to be deleted.
+	 *                     Primary-key field must be set for this to work properly.
+	 */
+	function disableById(&$valueObject) {
+
+		if (!$valueObject->getStrId()) {
+			return false;
+		}
+
+		$sql = "UPDATE user SET state=0 WHERE id=".$valueObject->getStrId()."";
+		$result = $this->boolEjecutarModificacionSQL($sql);
+
+		if ($result != 1) {
+			return false;
+		}
+		return $result;
+	}
+/*****************ADMINISTRATOR**********************/
+
+
 }
 
 ?>

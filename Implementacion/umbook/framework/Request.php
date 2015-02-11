@@ -1,12 +1,10 @@
 <?php
 
+class Request {
 
-
-class Request
-{
-    private $strController;
-    private $strMethod;
-    private $arrayArguments;
+    private $strController;     //nombre controlador
+    private $strMethod;         //nombre metodo
+    private $arrayArguments;    //argumentos
 
     /**
     *
@@ -17,10 +15,9 @@ class Request
     * @throws Vacio.
     *
     **/
-    public function __construct($strParametroController=false) {
+    public function __construct($strParametroController = false) {
 
-         error_log( __FILE__  ." >  > ".__METHOD__);
-
+        //error_log( __FILE__  ." ==> ".__METHOD__);   
 
         if(!$strParametroController){
             if(isset($_GET['url'])){
@@ -43,26 +40,37 @@ class Request
             
         }else{
             $this->strController = $strParametroController;
-            $this->strMethod = "not necesary";        
+            //$this->strMethod = "not necesary";        
         }
 
         if(!isset($this->arrayArguments)){
             $this->arrayArguments = array();
         }
+        
+        $arguments = "";
+        foreach ($this->arrayArguments as $key => $value) {
+            $arguments += "[$key] --> $value ";
+        }
+
+        error_log(__METHOD__." --> ".$this->strController."/".$this->strMethod."/".$arguments);
+
     }
     
     public function getStrController(){
-         error_log( __FILE__  ." >  > ".__METHOD__);
+        //error_log( __FILE__  ." ==> ".__METHOD__);
+        error_log(__METHOD__);
         return $this->strController;
     }
     
     public function getStrMethod(){
-         error_log( __FILE__  ." >  > ".__METHOD__);
+        //error_log( __FILE__  ." ==> ".__METHOD__);
+        error_log(__METHOD__);
         return $this->strMethod;
     }
     
     public function getArrayArguments(){
-         error_log( __FILE__  ." >  > ".__METHOD__);
+        //error_log( __FILE__  ." ==> ".__METHOD__);
+        error_log(__METHOD__);
         return $this->arrayArguments;
     }
 }

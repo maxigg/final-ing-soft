@@ -1,23 +1,42 @@
 <?php
-include PHP . "navbar.php";
+	include PHP . "navbar.php";
+	$Publications = array();
+	
+	if(isset($this->arrayObjPublications))
+		$publications = $this->arrayObjPublications;
 ?>
 
-<table class="table-striped" width="80%" align='center'>
+<table class="table table-hover" width="80%" align='center'>
 	<?php
-		foreach ($this->publications as $publi) {
-		?>
+		//$publication = new PublicationModel();
+		foreach ($publications as $publication) {
+	?>
 			<tr>
-				<td><a href="<?php echo BASE_URL.'user/'.$publi->strPublisher; ?>">Creador</a></td>
-				<td ><?php echo $publi->strDate; ?></td>
+				<td><a href="<?php echo BASE_URL.'user/'.$publication->getIntIdOwner(); ?>">Creador</a></td>
+				<td><?php echo $publication->getStrMessage(); ?></td>
+				<td><?php echo $publication->getStrDate(); ?></td>
 			</tr>
 			<tr>
-				<td collspan='2' align='center'><?php echo $publi->strMessage; ?></td>
+				<td colspan="3">
+					<table class="table table-stripped" align="right">	
+					<?php
+						$comments = $publication->getArrayObjComments();
+						foreach ($comments as $comment) {
+					?>
+					<tr>
+						<td><a href="<?php echo BASE_URL.'user/'.$comment->getObjUserOwner(); ?>">Creador</a></td>
+						<td align="right"><?php echo $comment->getStrMessage(); ?></td>
+						<td align="right"><?php echo $comment->getStrDate(); ?></td>
+					</tr>
+					<?php
+						}
+					?>
+					</table>
+				</td>
 			</tr>
-
-		<?php
-		}	
-		?>
+	<?php
+		}
+	?>
 </table>
-
 
 <?php include PHP . "footer.php";?>

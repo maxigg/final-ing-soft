@@ -5,7 +5,7 @@ class AlbumModel {
 	public $intId;
     public $strName;
     public $objUserOwner;
-	public $arrayObjPicturePictures;
+	public $arrayObjPictures = array();
 
     /**
      * Gets the value of intId.
@@ -80,25 +80,25 @@ class AlbumModel {
     }
 
     /**
-     * Gets the value of arrayObjPicturePictures.
+     * Gets the value of arrayObjPictures.
      *
      * @return mixed
      */
-    public function getArrayObjPicturePictures()
+    public function getarrayObjPictures()
     {
-        return $this->arrayObjPicturePictures;
+        return $this->arrayObjPictures;
     }
 
     /**
-     * Sets the value of arrayObjPicturePictures.
+     * Sets the value of arrayObjPictures.
      *
-     * @param mixed $arrayObjPicturePictures the array obj picturePictures
+     * @param mixed $arrayObjPictures the array obj picturePictures
      *
      * @return self
      */
-    public function setArrayObjPicturePictures($arrayObjPicturePictures)
+    public function setarrayObjPictures($arrayObjPictures)
     {
-        $this->arrayObjPicturePictures = $arrayObjPicturePictures;
+        $this->arrayObjPictures = $arrayObjPictures;
 
         return $this;
     }

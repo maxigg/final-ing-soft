@@ -1,8 +1,6 @@
 <?php
 
-
-class Session
-{
+class Session {
 
     /**
     *
@@ -13,7 +11,8 @@ class Session
     *
     **/
     static public function init(){
-        error_log( __FILE__  ." >  > ".__METHOD__);
+        //error_log( __FILE__  ." ==> ".__METHOD__);
+        error_log(__METHOD__);
         session_start();        
     }
     
@@ -27,9 +26,8 @@ class Session
     * @throws Vacio.
     *
     **/
-
     static public function destroySession($clave = false){
-         error_log( __FILE__  ." >  > ".__METHOD__);
+        error_log(__METHOD__);
         if($clave){
             if(is_array($clave)){
                 for($i = 0; $i < count($clave); $i++){
@@ -56,9 +54,9 @@ class Session
     * @throws vacio.
     *
     **/
-
     static public function setSessionVariable($strClave, $valor){
-        error_log( __FILE__  ." >  > ".__METHOD__);
+
+        error_log(__METHOD__." ".$strClave);
         if(!empty($strClave))
             $_SESSION[$strClave] = $valor;
     }
@@ -71,9 +69,8 @@ class Session
     * @throws vacio.
     *
     **/
-    
     static public function getSessionVariable($strClave){
-         error_log( __FILE__  ." >  > ".__METHOD__);
+        error_log(__METHOD__." ".$strClave);
         if(isset($_SESSION[$strClave]))
             return $_SESSION[$strClave];
     }

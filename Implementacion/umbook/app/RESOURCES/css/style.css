@@ -45,6 +45,7 @@ footer {
 	height: 10%; /* Altura del footer */
 	clear: both;
 	position: relative;
+	padding-bottom: inherit;
 }
 
 .table {
@@ -201,4 +202,12 @@ footer {
 	background: rgba(120, 145, 140, 0.8);
 	border: 2px solid white;
 }
- 
+
+.img-rounded-ET {
+	-webkit-border-radius: 6px;
+ 	-moz-border-radius: 6px;
+	border-radius: 6px;
+	width: auto;
+    max-height: 120px;
+    /*max-width: 100%;*/
+}

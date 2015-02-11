@@ -13,18 +13,41 @@ class UserModel {
     public $intRole;
     public $strNotifications;
     public $booleanState;
-    public $arrayobjAlbumAlbums;
-    public $arrayobjGroupGroups;
-    public $arrayobjPublicationPublications;
-    public $arrayobjUserFriends;
+    public $arrayObjAlbums = array();
+    public $arrayObjGroups = array();
+    public $arrayObjPublications = array();
+    public $arrayObjFriends = array();
+    public $arrayObjRequests = array();//sent requests
 
+    /**
+     * Transforms requests into Partial Users
+     *  SHOULD WORK WITH ONE ITEM INSTEAD OF AN ARRAY!!!!!!!!!!!!!!!
+     */
+    static public function resultToUserModel(&$result){
+        $objUsers = array();
+        $objUser = new UserModel();
+        foreach ($result as $value) {
+            $objUser->setIntId($value['id']);
+            $objUser->setStrUser($value['user']);
+            $objUser->setStrName($value['name']);
+            $objUser->setStrLastName($value['last_name']);
+            $objUser->setStrPathPhoto($value['path_photo']);
+            array_push($objUsers, $objUser);
+            $objUser = new UserModel();
+        }
+        return $objUsers;
+    }
 
+   /**
+     * Sets the values of an User in the registration.
+     *
+     */
     public function setUserModel(){
         $this->setstrName($_POST['name']);
         $this->setstrLastName($_POST['lastname']);
         $this->setstrEmail($_POST['email']);
-        $this->setstrUser($_POST['user']);
-        $this->setStrPassword($_POST['password']);
+        $this->setstrUser($_POST['userR']);
+        $this->setStrPassword($_POST['passwordR']);
         $this->setstrBirthday($_POST['birthday']);
     }
 
@@ -48,7 +71,6 @@ class UserModel {
     public function setIntId($intId)
     {
         $this->intId = $intId;
-
         return $this;
     }
 
@@ -72,7 +94,6 @@ class UserModel {
     public function setStrName($strName)
     {
         $this->strName = $strName;
-
         return $this;
     }
 
@@ -96,7 +117,6 @@ class UserModel {
     public function setStrLastName($strLastName)
     {
         $this->strLastName = $strLastName;
-
         return $this;
     }
 
@@ -120,7 +140,6 @@ class UserModel {
     public function setStrEmail($strEmail)
     {
         $this->strEmail = $strEmail;
-
         return $this;
     }
 
@@ -144,7 +163,6 @@ class UserModel {
     public function setStrUser($strUser)
     {
         $this->strUser = $strUser;
-
         return $this;
     }
 
@@ -168,7 +186,6 @@ class UserModel {
     public function setStrPassword($strPassword)
     {
         $this->strPassword = $strPassword;
-
         return $this;
     }
 
@@ -192,11 +209,10 @@ class UserModel {
     public function setStrPathPhoto($strPathPhoto)
     {
         $this->strPathPhoto = $strPathPhoto;
-
         return $this;
     }
 
-     /**
+    /**
      * Gets the value of strBirthday.
      *
      * @return mixed
@@ -216,7 +232,6 @@ class UserModel {
     public function setStrBirthday($strBirthday)
     {
         $this->strBirthday = $strBirthday;
-
         return $this;
     }
 
@@ -227,7 +242,7 @@ class UserModel {
      */
     public function getIntRole()
     {
-        return $this->intRol;
+        return $this->intRole;
     }
 
     /**
@@ -239,12 +254,11 @@ class UserModel {
      */
     public function setIntRole($intRol)
     {
-        $this->intRol = $intRol;
-
+        $this->intRole = $intRol;
         return $this;
     }
 
-     /**
+    /**
      * Gets the value of strNotifications.
      *
      * @return mixed
@@ -264,7 +278,6 @@ class UserModel {
     public function setStrNotifications($strNotifications)
     {
         $this->strNotifications = $strNotifications;
-
         return $this;
     }
 
@@ -288,105 +301,124 @@ class UserModel {
     public function setBooleanState($booleanState)
     {
         $this->booleanState = $booleanState;
-
         return $this;
     }
 
     /**
-     * Gets the value of arrayobjAlbumAlbums.
+     * Gets the value of ArrayObjAlbums.
      *
      * @return mixed
      */
-    public function getArrayobjAlbumAlbums()
+    public function getArrayObjAlbums()
     {
-        return $this->arrayobjAlbumAlbums;
+        return $this->arrayObjAlbums;
     }
 
     /**
-     * Sets the value of arrayobjAlbumAlbums.
+     * Sets the value of ArrayObjAlbums.
      *
-     * @param mixed $arrayobjAlbumAlbums the arrayobj album albums
+     * @param mixed $ArrayObjAlbums the arrayobj album albums
      *
      * @return self
      */
-    public function setArrayobjAlbumAlbums($arrayobjAlbumAlbums)
+    public function setArrayObjAlbums($ArrayObjAlbums)
     {
-        $this->arrayobjAlbumAlbums = $arrayobjAlbumAlbums;
-
+        $this->arrayObjAlbums = $ArrayObjAlbums;
         return $this;
     }
 
     /**
-     * Gets the value of arrayobjGroupGroups.
+     * Gets the value of ArrayObjGroups.
      *
      * @return mixed
      */
-    public function getArrayobjGroupGroups()
+    public function getArrayObjGroups()
     {
-        return $this->arrayobjGroupGroups;
+        return $this->arrayObjGroups;
     }
 
     /**
-     * Sets the value of arrayobjGroupGroups.
+     * Sets the value of ArrayObjGroups.
      *
-     * @param mixed $arrayobjGroupGroups the arrayobj group groups
+     * @param mixed $ArrayObjGroups the arrayobj group groups
      *
      * @return self
      */
-    public function setArrayobjGroupGroups($arrayobjGroupGroups)
+    public function setArrayObjGroups($ArrayObjGroups)
     {
-        $this->arrayobjGroupGroups = $arrayobjGroupGroups;
-
+        $this->arrayObjGroups = $ArrayObjGroups;
         return $this;
     }
 
     /**
-     * Gets the value of arrayobjPublicationPublications.
+     * Gets the value of ArrayObjPublications.
      *
      * @return mixed
      */
-    public function getArrayobjPublicationPublications()
+    public function getArrayObjPublications()
     {
-        return $this->arrayobjPublicationPublications;
+        return $this->arrayObjPublications;
     }
 
     /**
-     * Sets the value of arrayobjPublicationPublications.
+     * Sets the value of ArrayObjPublications.
      *
-     * @param mixed $arrayobjPublicationPublications the arrayobj publication publications
+     * @param mixed $ArrayObjPublications the arrayobj publication publications
      *
      * @return self
      */
-    public function setArrayobjPublicationPublications($arrayobjPublicationPublications)
+    public function setArrayObjPublications($ArrayObjPublications)
     {
-        $this->arrayobjPublicationPublications = $arrayobjPublicationPublications;
-
+        $this->arrayObjPublications = $ArrayObjPublications;
         return $this;
     }
 
     /**
-     * Gets the value of arrayobjUserFriends.
+     * Gets the value of ArrayObjFriends.
      *
      * @return mixed
      */
-    public function getArrayobjUserFriends()
+    public function getArrayObjFriends()
     {
-        return $this->arrayobjUserFriends;
+        return $this->arrayObjFriends;
     }
 
     /**
-     * Sets the value of arrayobjUserFriends.
+     * Sets the value of ArrayObjFriends.
      *
-     * @param mixed $arrayobjUserFriends the arrayobj user friends
+     * @param mixed $ArrayObjFriends the arrayobj user friends
      *
      * @return self
      */
-    public function setArrayobjUserFriends($arrayobjUserFriends)
+    public function setArrayObjFriends($ArrayObjFriends)
     {
-        $this->arrayobjUserFriends = $arrayobjUserFriends;
-
+        $this->arrayObjFriends = $ArrayObjFriends;
         return $this;
     }
+
+    /**
+     * Gets the value of ArrayIntRequests.
+     *
+     * @return mixed
+     */
+    public function getArrayObjRequests()
+    {
+        return $this->arrayObjRequests;
+    }
+
+    /**
+     * Sets the value of ArrayIntRequests.
+     *
+     * @param mixed $ArrayIntRequests
+     *
+     * @return self
+     */
+    public function setArrayObjRequests($ArrayObjRequests)
+    {
+        $this->arrayObjRequests = $ArrayObjRequests;
+        return $this;
+    }
+
 }
 
 ?>
