@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost/final-ing-soft/Implementacion/umbook/" />
-<title>LoginFAIL</title>
+<title>SearchOK</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">LoginFAIL</td></tr>
+<tr><td rowspan="1" colspan="3">SearchOK</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -19,12 +19,12 @@
 <tr>
 	<td>type</td>
 	<td>id=userL</td>
-	<td>asd</td>
+	<td>eduardo</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=passwordL</td>
-	<td>321</td>
+	<td>123</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -32,16 +32,45 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>css=h3</td>
-	<td>Usuario o Password Incorrectos!</td>
+	<td>type</td>
+	<td>name=search</td>
+	<td>a</td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=h3</td>
-	<td>Usuario o Password Incorrectos!</td>
+	<td>open</td>
+	<td>/final-ing-soft/Implementacion/umbook/wall</td>
+	<td></td>
 </tr>
-
+<tr>
+	<td>submitAndWait</td>
+	<td>/html/body/div/div/div/div/div[2]/div/ul/li[9]/form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3</td>
+	<td>Se encontraron: 17 Coincidencias para &quot;a&quot;</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.icon-user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.icon-minus-sign</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=i.icon-plus-sign</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Cerrar Session</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
